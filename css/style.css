@@ -18,6 +18,10 @@ h6 {
     "opsz" 24;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -57,4 +61,15 @@ h6 {
 }
 .animate-fade-in {
   animation: fadeIn 1s ease-out forwards;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

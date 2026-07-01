@@ -16,201 +16,301 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+
   <body class="bg-background text-on-background">
     <!-- TopNavBar -->
     <header
-      class="bg-surface dark:bg-inverse-surface w-full top-0 sticky border-b border-outline-variant dark:border-outline z-50 transition-all duration-300"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out-cubic"
+      class="bg-surface dark:bg-inverse-surface w-full sticky top-0 z-50 backdrop-blur-md/80 transition-all duration-500"
     >
       <div
         class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
       >
+        <!-- LOGO -->
         <div
-          class="text-headline-md font-headline-md font-bold text-on-surface dark:text-inverse-on-surface tracking-tight"
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="900"
+          class="flex items-center gap-3"
         >
-          PT. Adriean Suma Jaya
+          <img
+            src="./resources/ASJ.png"
+            alt="Logo"
+            class="w-10 h-10 object-contain transition-transform duration-500 hover:scale-110"
+          />
+
+          <span
+            class="text-headline-md font-bold tracking-tight text-on-surface dark:text-inverse-on-surface"
+          >
+            PT. Adriean Suma Jaya
+          </span>
         </div>
+
+        <!-- MENU -->
         <nav class="hidden md:flex items-center gap-gutter">
           <a
-            class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary pb-1"
             href="#"
-            >Home</a
+            data-aos="fade-down"
+            data-aos-delay="350"
+            class="font-bold text-secondary border-b-2 border-secondary pb-1 transition-all duration-300 hover:-translate-y-0.5"
           >
+            Home
+          </a>
+
           <a
-            class="text-on-surface dark:text-surface-variant font-medium hover:text-secondary transition-colors duration-200 pb-1"
             href="#about"
-            >About</a
+            data-aos="fade-down"
+            data-aos-delay="450"
+            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
           >
+            About
+          </a>
+
           <a
-            class="text-on-surface dark:text-surface-variant font-medium hover:text-secondary transition-colors duration-200 pb-1"
             href="#services"
-            >Services</a
+            data-aos="fade-down"
+            data-aos-delay="550"
+            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
           >
+            Services
+          </a>
+
           <a
-            class="text-on-surface dark:text-surface-variant font-medium hover:text-secondary transition-colors duration-200 pb-1"
             href="#products"
-            >Products</a
+            data-aos="fade-down"
+            data-aos-delay="650"
+            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
           >
+            Products
+          </a>
+
           <a
-            class="text-on-surface dark:text-surface-variant font-medium hover:text-secondary transition-colors duration-200 pb-1"
             href="#gallery"
-            >Gallery</a
+            data-aos="fade-down"
+            data-aos-delay="750"
+            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
           >
+            Gallery
+          </a>
+
           <a
-            class="text-on-surface dark:text-surface-variant font-medium hover:text-secondary transition-colors duration-200 pb-1"
             href="#safety"
-            >Safety</a
+            data-aos="fade-down"
+            data-aos-delay="850"
+            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
           >
+            Safety
+          </a>
         </nav>
-        <div class="hidden md:block">
+
+        <!-- BUTTON -->
+        <div
+          class="hidden md:block"
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+          data-aos-duration="900"
+        >
           <button
-            class="bg-secondary text-white font-button text-button px-6 py-3 rounded scale-95 active:scale-90 transition-transform hover:bg-secondary-container"
+            class="bg-secondary text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-xl hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300"
           >
             Contact Us
           </button>
         </div>
-        <button
-          class="md:hidden text-on-surface hover:text-secondary transition-colors"
-        >
-          <span class="material-symbols-outlined text-3xl">menu</span>
+
+        <!-- MOBILE -->
+        <button class="md:hidden" data-aos="fade-left" data-aos-delay="500">
+          <span class="material-symbols-outlined text-3xl"> menu </span>
         </button>
       </div>
     </header>
     <main>
       <!-- Hero Section -->
       <section
-        class="relative h-[819px] min-h-[600px] flex items-center justify-center"
+        class="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
+        <!-- Background -->
         <div
-          class="absolute inset-0 w-full h-full bg-cover bg-center"
+          class="absolute inset-0 bg-cover bg-center scale-110 animate-[kenburns_18s_ease-in-out_infinite_alternate]"
           style="background-image: url(&quot;./resources/2.5.png&quot;)"
         ></div>
-        <div class="absolute inset-0 bg-primary/70"></div>
+
+        <!-- Overlay -->
         <div
-          class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center"
-        >
+          class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"
+        ></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+          <!-- Badge -->
+
+          <!-- Title -->
+
           <h1
-            class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-white mb-6 max-w-4xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            class="mt-8 text-5xl md:text-7xl font-extrabold text-white leading-tight max-w-5xl mx-auto"
           >
-            Solusi Transportasi BBM dan Logistik Energi yang Aman, Profesional,
-            dan Terpercaya
+            Solusi
+            <span class="text-red-500"> Transportasi BBM </span>
+
+            dan Logistik Energi yang Aman, Profesional, serta Terpercaya
           </h1>
+
+          <!-- Description -->
+
           <p
-            class="text-body-lg font-body-lg text-surface-variant mb-10 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="mt-8 text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Leading fuel transportation company committed to safety and
-            excellence in every drop delivered.
+            PT. Adriean Suma Jaya menghadirkan layanan transportasi bahan bakar
+            minyak dan logistik energi dengan armada modern, tenaga profesional,
+            serta standar keselamatan terbaik.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              class="bg-secondary text-white font-button text-button px-8 py-4 rounded hover:bg-secondary-container transition-colors shadow-sm"
+
+          <!-- Button -->
+
+          <div
+            data-aos="fade-up"
+            data-aos-delay="600"
+            class="mt-12 flex flex-col sm:flex-row justify-center gap-5"
+          >
+            <a
+              href="#contact"
+              class="bg-red-600 hover:bg-red-700 text-white px-9 py-4 rounded-xl font-semibold shadow-xl hover:scale-105 transition-all duration-300"
             >
               Hubungi Kami
-            </button>
-            <button
-              class="border-2 border-white text-white font-button text-button px-8 py-4 rounded hover:bg-white/10 transition-colors"
+            </a>
+
+            <a
+              href="#about"
+              class="border border-white/40 backdrop-blur-md bg-white/10 hover:bg-white hover:text-black text-white px-9 py-4 rounded-xl font-semibold transition-all duration-300"
             >
               Lihat Profil
-            </button>
+            </a>
           </div>
         </div>
+
+        <!-- Scroll Indicator -->
+
+       
       </section>
       <!-- About Section -->
       <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface"
         id="about"
+        class="relative py-28 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
       >
-        <div
-          class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-        >
-          <div>
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-6"
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <!-- IMAGE -->
+            <div
+              class="relative"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
-              Tentang Kami
-            </h2>
-            <div class="w-16 h-1 bg-secondary mb-8"></div>
-            <p class="text-body-lg font-body-lg text-on-surface-variant mb-6">
-              PT. Adriean Suma Jaya adalah perusahaan terkemuka di bidang
-              logistik energi dan distribusi bahan bakar minyak. Dengan dedikasi
-              terhadap keunggulan, kami menyediakan layanan transportasi BBM
-              yang aman, efisien, dan profesional.
-            </p>
-            <p class="text-body-lg font-body-lg text-on-surface-variant mb-8">
-              Komitmen kami terhadap keselamatan, ketepatan waktu, dan kepuasan
-              pelanggan menjadikan kami mitra yang dapat diandalkan bagi
-              berbagai industri di seluruh negeri.
-            </p>
-            <div class="flex gap-4">
-              <div class="flex flex-col border-l-4 border-secondary pl-4">
-                <span
-                  class="text-headline-md font-headline-md font-bold text-on-surface"
-                  >15+</span
-                >
-                <span class="text-body-md text-on-surface-variant"
-                  >Tahun Pengalaman</span
-                >
+              <div class="overflow-hidden rounded-3xl shadow-2xl">
+                <img
+                  src="./resources/2.4.png"
+                  alt="PT Adriean Suma Jaya"
+                  class="w-full h-[550px] object-cover hover:scale-105 transition duration-700"
+                />
               </div>
-              <div class="flex flex-col border-l-4 border-secondary pl-4">
-                <span
-                  class="text-headline-md font-headline-md font-bold text-on-surface"
-                  >200+</span
-                >
-                <span class="text-body-md text-on-surface-variant"
-                  >Armada Modern</span
-                >
+
+              <!-- Floating Card -->
+
+              <div
+                class="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-xl p-6 w-64"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <p class="text-4xl font-bold text-red-600">18+</p>
+
+                <p class="text-gray-600 mt-2">
+                  Tahun berpengalaman dalam transportasi BBM dan logistik
+                  energi.
+                </p>
               </div>
             </div>
-          </div>
-          <div class="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-            <img
-              alt="Operational fleet"
-              class="w-full h-full object-cover"
-              src="./resources/2.4.png"
-            />
-            <div class="absolute inset-0 bg-primary/10"></div>
-          </div>
-        </div>
-      </section>
-      <!-- Vision & Mission -->
-      <section
-        class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low"
-      >
-        <div
-          class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-          <div
-            class="bg-white p-10 rounded-xl shadow-md border border-outline-variant flex flex-col items-center text-center"
-          >
-            <div
-              class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary"
-            >
-              <span class="material-symbols-outlined text-3xl">visibility</span>
+
+            <!-- CONTENT -->
+
+            <div>
+              <div data-aos="fade-left" data-aos-duration="900">
+                <span
+                  class="inline-block px-4 py-2 rounded-full bg-red-100 text-red-600 text-sm font-semibold tracking-wide"
+                >
+                  ABOUT COMPANY
+                </span>
+
+                <h2 class="mt-6 text-5xl font-bold text-gray-900 leading-tight">
+                  Mitra Terpercaya
+                  <span class="text-red-600"> Distribusi BBM </span>
+                  dan Logistik Energi
+                </h2>
+
+                <p class="mt-8 text-lg leading-9 text-gray-600">
+                  PT. Adriean Suma Jaya merupakan perusahaan yang bergerak di
+                  bidang transportasi dan distribusi bahan bakar minyak dengan
+                  pengalaman lebih dari 18 tahun.
+                </p>
+
+                <p class="mt-6 text-lg leading-9 text-gray-600">
+                  Dengan armada modern, tenaga kerja profesional, serta standar
+                  keselamatan yang tinggi, kami berkomitmen memberikan pelayanan
+                  yang aman, tepat waktu, dan berkualitas kepada seluruh
+                  pelanggan di Indonesia.
+                </p>
+              </div>
+
+              <!-- STATS -->
+
+              <div class="grid grid-cols-2 gap-6 mt-12">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                >
+                  <h3 class="text-4xl font-bold text-red-600">18+</h3>
+
+                  <p class="mt-2 text-gray-600">Tahun Pengalaman</p>
+                </div>
+
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="250"
+                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                >
+                  <h3 class="text-4xl font-bold text-red-600">50+</h3>
+
+                  <p class="mt-2 text-gray-600">Karyawan Profesional</p>
+                </div>
+
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                >
+                  <h3 class="text-4xl font-bold text-red-600">500+</h3>
+
+                  <p class="mt-2 text-gray-600">Klien Nasional</p>
+                </div>
+
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="550"
+                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                >
+                  <h3 class="text-4xl font-bold text-red-600">1300+</h3>
+
+                  <p class="mt-2 text-gray-600">Project Selesai</p>
+                </div>
+              </div>
             </div>
-            <h3 class="text-headline-md font-headline-md text-on-surface mb-4">
-              Visi Kami
-            </h3>
-            <p class="text-body-lg font-body-lg text-on-surface-variant">
-              Menjadi perusahaan transportasi dan logistik energi yang paling
-              terpercaya, profesional, dan diandalkan di Indonesia.
-            </p>
-          </div>
-          <div
-            class="bg-white p-10 rounded-xl shadow-md border border-outline-variant flex flex-col items-center text-center"
-          >
-            <div
-              class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary"
-            >
-              <span class="material-symbols-outlined text-3xl">flag</span>
-            </div>
-            <h3 class="text-headline-md font-headline-md text-on-surface mb-4">
-              Misi Kami
-            </h3>
-            <p class="text-body-lg font-body-lg text-on-surface-variant">
-              Menyediakan layanan berkualitas dengan standar keselamatan
-              tertinggi, profesionalisme, kepatuhan regulasi, dan fokus utama
-              pada kepuasan pelanggan.
-            </p>
           </div>
         </div>
       </section>
@@ -379,6 +479,7 @@
           </div>
         </div>
       </section>
+
       <!-- Products Section -->
       <section
         class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low"
@@ -406,16 +507,17 @@
                 <img
                   alt="Biosolar"
                   class="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8zTDn1CiJLB-wPE99JhcQk6Ms45stYVECNoTG3NgOpeUu2HiF2L-oL5MsgHeU9tE3pBKLBoFSxx6dEqR46RqTtcl-Sq48OdnJAZIed4VRZ0TgI8c023Wc36ltaM_nbc5BlwlW74IBvMjEbYM9TJ7rrZJ-j6tj7Vp7tAOlHZeGnXXtCeN7t8ccXZj-Ajxq2xv1-YTEqa5GTG4iPPSC1t2oo5Qb3IbBpi4ZviVk-0mnknjWzi1abqT902O_NlIffgkqWVer-rRcCCs"
+                  src="./resources/biosolar.png"
                 />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Biosolar (B30)
+                  Biosolar (B40)
                 </h3>
                 <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Bahan bakar diesel yang dicampur dengan 30% minyak nabati,
-                  ramah lingkungan dan efisien.
+                  Bio solar B40 merupakan hasil pencapuran solar dengan minyak
+                  nabati yang berasal dari minyak kelapa sawit atau Crude Palm
+                  Oil (CPO).
                 </p>
                 <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
                   <p class="text-sm font-semibold text-secondary mb-1">
@@ -435,7 +537,7 @@
                 <img
                   alt="Dexlite"
                   class="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7EOpPQTrNZ5had_j9v5SQROR8jCc8sur_5keMkoAUlU9HyTQjqwf954wYmPEo8XRBFmSZHxX8WR5YxgTGV8K1RUACEfk-9487j6ZFLL7KrbzAlZ4Vj1gK_he45vMhk6fvL2aJXvAfeBt5aD2AnpXL4CCP4Zum5gFMM2OBBGP-Ktr4B0Mv-ujp5PPlKO4OCAtsN_SX-2B2EpraSKbdXvf1frno1f9viOTHGV9_61fi7Rw8AFPC11wSo0qhxPK2ymXIV9VT-j5b2PQ"
+                  src="./resources/dexlite.png"
                 />
               </div>
               <div class="p-6 flex-1 flex flex-col">
@@ -464,7 +566,7 @@
                 <img
                   alt="Pertamina Dex"
                   class="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3wN2Wwk2mLOfFjLUZU6FoeiPOnD08fsmUQOIVkBqlxfC0UJ3v4Hkxb1Nc0RDEdTetONlrR-fv_VKY-4DzMya2NeuUnTElYZHBMDd9QgPm29xt2IwE1f_rYJ8Vnao1EXhOnB5rIKmNqFqLJ4QwpmpcVniHkPPiXgR76uqOq849NDWyTV-qDKDRLJ3QIQyotjHRGM-IE3Gdeg1yESduspDfasqaAre5W5lu-riCobpVmzNhVOkviKGcIPjnO59rGnn_2wPCX45J_1g"
+                  src="./resources/pertaminadex.png"
                 />
               </div>
               <div class="p-6 flex-1 flex flex-col">
@@ -493,7 +595,7 @@
                 <img
                   alt="Pertalite"
                   class="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AGiE1zFnjP1Z3B3C84b0j3sF_i4uT42zGqKk3N7x7i2z83-7jW7-54-4z-7BwzJc-q3Zk3ZzZ4N4-yT0P7mPj7D_3Dq5m3tW"
+                  src="./resources/pertalite.png"
                 />
               </div>
               <div class="p-6 flex-1 flex flex-col">
@@ -520,7 +622,7 @@
                 <img
                   alt="Pertamax"
                   class="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AGiE1zF3J35Z5J5z8Z4j7-T0P7mPj7D_3Dq5m3tWZ4N4-yT0P7mPj7D_3Dq5m3tW-7jW7-54-4z-7BwzJc-q3Zk3ZzZ4N4-y"
+                  src="./resources/pertamax.png"
                 />
               </div>
               <div class="p-6 flex-1 flex flex-col">
@@ -547,7 +649,7 @@
                 <img
                   alt="Pertamax Turbo"
                   class="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AGiE1zE0zP7mPj7D_3Dq5m3tW-7jW7-54-4z-7BwzJc-q3Zk3ZzZ4N4-yT0P7mPj7D_3Dq5m3tWZ4N4-yT0P7mPj7D_3Dq5m"
+                  src="./resources/turbo.png"
                 />
               </div>
               <div class="p-6 flex-1 flex flex-col">
@@ -747,69 +849,71 @@
       <section
         class="py-16 px-margin-mobile md:px-margin-desktop bg-surface border-y border-outline-variant overflow-hidden"
       >
-        <div class="max-w-container-max mx-auto animate-fade-in">
+        <div class="max-w-container-max mx-auto">
           <h3
             class="text-center text-headline-md text-on-surface mb-10 font-semibold"
           >
             Dipercaya Oleh Mitra Industri
           </h3>
+
           <div
-            class="relative py-8 logo-mask opacity-80 hover:opacity-100 transition-opacity duration-300"
+            id="logoSlider"
+            class="overflow-x-scroll no-scrollbar cursor-grab active:cursor-grabbing select-none"
           >
-            <div
-              class="flex gap-24 items-center animate-scroll whitespace-nowrap w-max"
-            >
-              <img
-                alt="Partner 1"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu1s-Qfwfa-x7sAGjptL0dDy1u4Ntf8xSg6M2qiHp-C-MklM_ZkODy8tzyETLg-R40neBOhqVRfdYcpiNLnVL5A-iaA96UkbjfowsOSFsIPUDwpLyhnU1x1K8H0YjJAOK7nCRT34dUWFPfGzVjOFOmBIoe8NX1yKpGT8bTKCKNbU6ul-XReIBDtEieMNUFoYT--UWlLpJx9G_n1kKpIj1Y5-68WkpyMD059xFHAS9NpuX_hAFJDe8ZnAmzjGsloTpOkHOl7snWbFs"
-              />
-              <img
-                alt="Partner 2"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpzXvSuB3bY_F3_1o-ZIz5gRtlQHrZgwXLZ-8gw5OjN3B1HjMDZ1BCXMUU9nq3rg5xPrAJ-QjxodZGrkzEHaExMEypPt-kM15n1CVMV2nwUokVPdoM-vxZSr5p2ENBT-qjaXrM4bwWkIevIk-uuC1VsozqyaRU4yPkxtBkh2yOSDkQ9_0nxstilDPJxny8ue-KYtTnGdKMNDv6Oc06Igm8x3izPAaxqTg7b2xGHzkZYvc-4-QWsjbM_1lV-Hh_33pLQVQWJ50kasA"
-              />
-              <img
-                alt="Partner 3"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLYL1AGJXFHNvRaubRhUW7feI4fCcoZRqPfXiW3OaFspyRMpCdItLfswxAvQ-Dp3sgqvc2ufJX80Nc3xUa0jpyrRwr7Ex30jmmZi7C0hW-swTeyMtsFVwuXRb4O5frhBJ6PNWPhmomVbEBInKS-zwqbXLaDb56I9rWPnbeVJ-UDlUgaYSi7R0QuB366OvXldPhXQOBb9gG0WStft2jc6QR_wPt0x7nJCGsmXRpX1Vd96cNUTlnqXAUYfAIosU3Slz749-HYIh4JY4"
-              />
-              <img
-                alt="Partner 4"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIY7VZ4ig6vQlucYmSLhDfwLPCVwsomGsHT0FUQ2fNkf2B4I2gHCDCGy3Ihn9aWDZ7lZ9oL9NAPoYKejlgr2H1Ac8FvaJYtVIMBrzMqf0kEo3v2p83GpBJJlAfkJAgQx5O3wEbFKrbemwv0k8AmZpyLef7Y7w3n940GB3ftdo1N6-HZ63ZngU8LA781NVpTKSXlMmNcZfWwm7wxHjsVjf3-YyrtE9gy8prTZ2Ew1Uhrzc_9_W2AP_KHtP64jTjdyr6zBZW7a1Lr8E"
-              />
-              <img
-                alt="Partner 5"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWb5UTnlyCGAd6n8IDE12M_1Zktp8bnCAoBdaPxZCrbPR8IELZacnZuXEWZ0Ca_LmyDhWByBdo4Ymb1UltYlafFoEif72Wzb5HKytMqLoiSCiZYBC258-5leMvv6so-d_b8m1eWFBOh9jusxF55T0uloL2fvrO6iPDd02-uww3j0XHJnEQslJPICiI2OHKdq3UNvsUINAgIfgeo31kUu4vPsTptmrYX_I8MS7KnEEEkfGKKiqEwhxETsY60nggtDzK1PIJ7BZgGbU"
-              />
-              <!-- Duplicate for infinite loop -->
-              <img
-                alt="Partner 1"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu1s-Qfwfa-x7sAGjptL0dDy1u4Ntf8xSg6M2qiHp-C-MklM_ZkODy8tzyETLg-R40neBOhqVRfdYcpiNLnVL5A-iaA96UkbjfowsOSFsIPUDwpLyhnU1x1K8H0YjJAOK7nCRT34dUWFPfGzVjOFOmBIoe8NX1yKpGT8bTKCKNbU6ul-XReIBDtEieMNUFoYT--UWlLpJx9G_n1kKpIj1Y5-68WkpyMD059xFHAS9NpuX_hAFJDe8ZnAmzjGsloTpOkHOl7snWbFs"
-              />
-              <img
-                alt="Partner 2"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpzXvSuB3bY_F3_1o-ZIz5gRtlQHrZgwXLZ-8gw5OjN3B1HjMDZ1BCXMUU9nq3rg5xPrAJ-QjxodZGrkzEHaExMEypPt-kM15n1CVMV2nwUokVPdoM-vxZSr5p2ENBT-qjaXrM4bwWkIevIk-uuC1VsozqyaRU4yPkxtBkh2yOSDkQ9_0nxstilDPJxny8ue-KYtTnGdKMNDv6Oc06Igm8x3izPAaxqTg7b2xGHzkZYvc-4-QWsjbM_1lV-Hh_33pLQVQWJ50kasA"
-              />
-              <img
-                alt="Partner 3"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLYL1AGJXFHNvRaubRhUW7feI4fCcoZRqPfXiW3OaFspyRMpCdItLfswxAvQ-Dp3sgqvc2ufJX80Nc3xUa0jpyrRwr7Ex30jmmZi7C0hW-swTeyMtsFVwuXRb4O5frhBJ6PNWPhmomVbEBInKS-zwqbXLaDb56I9rWPnbeVJ-UDlUgaYSi7R0QuB366OvXldPhXQOBb9gG0WStft2jc6QR_wPt0x7nJCGsmXRpX1Vd96cNUTlnqXAUYfAIosU3Slz749-HYIh4JY4"
-              />
-              <img
-                alt="Partner 4"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIY7VZ4ig6vQlucYmSLhDfwLPCVwsomGsHT0FUQ2fNkf2B4I2gHCDCGy3Ihn9aWDZ7lZ9oL9NAPoYKejlgr2H1Ac8FvaJYtVIMBrzMqf0kEo3v2p83GpBJJlAfkJAgQx5O3wEbFKrbemwv0k8AmZpyLef7Y7w3n940GB3ftdo1N6-HZ63ZngU8LA781NVpTKSXlMmNcZfWwm7wxHjsVjf3-YyrtE9gy8prTZ2Ew1Uhrzc_9_W2AP_KHtP64jTjdyr6zBZW7a1Lr8E"
-              />
-              <img
-                alt="Partner 5"
-                class="h-24 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWb5UTnlyCGAd6n8IDE12M_1Zktp8bnCAoBdaPxZCrbPR8IELZacnZuXEWZ0Ca_LmyDhWByBdo4Ymb1UltYlafFoEif72Wzb5HKytMqLoiSCiZYBC258-5leMvv6so-d_b8m1eWFBOh9jusxF55T0uloL2fvrO6iPDd02-uww3j0XHJnEQslJPICiI2OHKdq3UNvsUINAgIfgeo31kUu4vPsTptmrYX_I8MS7KnEEEkfGKKiqEwhxETsY60nggtDzK1PIJ7BZgGbU"
-              />
+            <div id="logoTrack" class="flex w-max gap-24 items-center">
+              <div
+                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMJUoU65EtfMjuKDKzU7FNqbNg8FKYg_u3eLsGa6yCQ&s=10"
+                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                />
+              </div>
+
+              <div
+                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4DFkLxiPNF4HGzLxGj63_QY7L6r7VUlHf2Nq3cpZuA&s=10"
+                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                />
+              </div>
+
+              <div
+                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUdZa_Z1qmBwynkFzCxkrrOhfvE3ok_IZ02UiIrN4t5g&s=10"
+                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                />
+              </div>
+
+              <div
+                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzX5tpaNgepsx4QHMPo4U_WdDFMzgiv5jmPYPCGsUNdA&s=10"
+                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                />
+              </div>
+
+              <div
+                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAIxnbQM__j164NlTN1FX5RPbQ-QeOU0hVK-DCKkes_g&s=10"
+                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                />
+              </div>
+
+              <div
+                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+              >
+                <img
+                  src="./resources/sharp.jpg"
+                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1070,10 +1174,15 @@
       >
         <div class="col-span-1 md:col-span-2">
           <div
-            class="text-headline-md font-headline-md font-bold text-white mb-6 flex items-center gap-2"
+            class="text-headline-md font-headline-md font-bold text-white mb-6 flex items-baseline gap-2"
           >
-            <span class="w-8 h-8 bg-secondary rounded-sm inline-block"></span>
-            PT. Adriean Suma Jaya
+            <img
+              src="./resources/ASJ.png"
+              alt="Logo PT. Adriean Suma Jaya"
+              class="w-8 h-8 object-contain"
+            />
+
+            <span>PT. Adriean Suma Jaya</span>
           </div>
           <p
             class="text-body-md font-body-md text-outline-variant max-w-md mb-8"
@@ -1169,5 +1278,15 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Durasi animasi dalam milidetik
+        once: true, // Animasi hanya berjalan sekali saat pertama kali di-scroll
+        offset: 100, // Jarak offset sebelum animasi dimulai
+      });
+    </script>
   </body>
 </html>
