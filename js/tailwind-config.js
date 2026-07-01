@@ -3,53 +3,36 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        "inverse-on-surface": "#ebf1ff",
-        "inverse-surface": "#263142",
-        "tertiary-container": "#191c1e",
-        "surface-variant": "#d8e3fa",
-        "outline-variant": "#c5c6cd",
-        "surface-container": "#e7eeff",
-        primary: "#000000",
-        "on-secondary-fixed-variant": "#93000d",
-        "on-surface": "#111c2c",
-        "surface-container-highest": "#d8e3fa",
-        outline: "#75777e",
-        "secondary-fixed": "#ffdad6",
-        "inverse-primary": "#b9c7e4",
-        "surface-tint": "#515f78",
-        "tertiary-fixed": "#e0e3e6",
-        "surface-bright": "#f9f9ff",
-        "error-container": "#ffdad6",
-        "on-error-container": "#93000a",
-        "secondary-container": "#e41f25",
-        background: "#f9f9ff",
-        error: "#ba1a1a",
-        "on-tertiary-fixed": "#191c1e",
-        "surface-container-low": "#f0f3ff",
-        "surface-dim": "#cfdaf1",
-        secondary: "#bb0014",
-        "on-tertiary": "#ffffff",
-        "on-tertiary-container": "#818487",
-        "primary-fixed": "#d6e3ff",
-        "surface-container-high": "#dee8ff",
-        "primary-fixed-dim": "#b9c7e4",
-        "on-secondary-fixed": "#410002",
-        "on-primary-fixed-variant": "#39475f",
-        "on-secondary": "#ffffff",
-        "on-primary-container": "#76849f",
-        "primary-container": "#0d1c32",
-        "on-secondary-container": "#fffbff",
-        "tertiary-fixed-dim": "#c4c7ca",
-        "surface-container-lowest": "#ffffff",
-        "on-primary-fixed": "#0d1c32",
-        tertiary: "#000000",
-        surface: "#f9f9ff",
-        "on-surface-variant": "#44474d",
-        "secondary-fixed-dim": "#ffb4ab",
-        "on-background": "#111c2c",
-        "on-error": "#ffffff",
-        "on-primary": "#ffffff",
-        "on-tertiary-fixed-variant": "#44474a",
+        // Background
+        background: "#0B0B0B",
+        surface: "#111111",
+
+        "surface-container": "#151515",
+        "surface-container-low": "#121212",
+        "surface-container-high": "#1A1A1A",
+        "surface-container-highest": "#202020",
+
+        // Text
+        "on-background": "#FFFFFF",
+        "on-surface": "#FFFFFF",
+        "on-surface-variant": "#B5B5B5",
+
+        // Primary
+        primary: "#FFFFFF",
+        "on-primary": "#111111",
+
+        // Accent
+        secondary: "#D62828",
+        "secondary-container": "#B91C1C",
+        "on-secondary": "#FFFFFF",
+
+        // Border
+        outline: "#2A2A2A",
+        "outline-variant": "#333333",
+
+        // Error
+        error: "#EF4444",
+        "on-error": "#FFFFFF",
       },
       borderRadius: {
         DEFAULT: "0.125rem",

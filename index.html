@@ -197,15 +197,21 @@
         </div>
 
         <!-- Scroll Indicator -->
-
-       
       </section>
-      <!-- About Section -->
       <section
         id="about"
-        class="relative py-28 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
+        class="relative py-28 overflow-hidden bg-gradient-to-b from-[#0B0B0B] via-[#101010] to-[#151515]"
       >
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Background Glow -->
+        <div
+          class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[180px]"
+        ></div>
+
+        <div
+          class="absolute -bottom-40 -right-40 w-[450px] h-[450px] bg-secondary/10 rounded-full blur-[180px]"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div class="grid lg:grid-cols-2 gap-20 items-center">
             <!-- IMAGE -->
             <div
@@ -213,26 +219,30 @@
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <div class="overflow-hidden rounded-3xl shadow-2xl">
+              <div
+                class="overflow-hidden rounded-3xl border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.5)]"
+              >
                 <img
                   src="./resources/2.4.png"
                   alt="PT Adriean Suma Jaya"
-                  class="w-full h-[550px] object-cover hover:scale-105 transition duration-700"
+                  class="w-full h-[560px] object-cover transition duration-700 hover:scale-105"
                 />
               </div>
 
-              <!-- Floating Card -->
+              <!-- Floating Experience Card -->
 
               <div
-                class="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-xl p-6 w-64"
+                class="absolute -bottom-8 -right-8 w-72 bg-[#181818]/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl"
                 data-aos="fade-up"
-                data-aos-delay="400"
+                data-aos-delay="300"
               >
-                <p class="text-4xl font-bold text-red-600">18+</p>
+                <div class="text-5xl font-extrabold text-secondary">18+</div>
 
-                <p class="text-gray-600 mt-2">
-                  Tahun berpengalaman dalam transportasi BBM dan logistik
-                  energi.
+                <div class="w-12 h-1 bg-secondary rounded-full my-4"></div>
+
+                <p class="text-zinc-400 leading-7">
+                  Tahun pengalaman dalam transportasi BBM dan logistik energi
+                  dengan standar keselamatan terbaik.
                 </p>
               </div>
             </div>
@@ -240,1041 +250,1868 @@
             <!-- CONTENT -->
 
             <div>
+              <!-- Badge -->
+
               <div data-aos="fade-left" data-aos-duration="900">
                 <span
-                  class="inline-block px-4 py-2 rounded-full bg-red-100 text-red-600 text-sm font-semibold tracking-wide"
+                  class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-sm font-semibold tracking-[0.2em]"
                 >
                   ABOUT COMPANY
                 </span>
 
-                <h2 class="mt-6 text-5xl font-bold text-gray-900 leading-tight">
+                <h2
+                  class="mt-8 text-5xl lg:text-6xl font-extrabold text-white leading-tight"
+                >
                   Mitra Terpercaya
-                  <span class="text-red-600"> Distribusi BBM </span>
+                  <span class="text-secondary"> Distribusi BBM </span>
+
                   dan Logistik Energi
                 </h2>
 
-                <p class="mt-8 text-lg leading-9 text-gray-600">
+                <div class="mt-6 w-24 h-1 rounded-full bg-secondary"></div>
+
+                <p class="mt-8 text-lg leading-9 text-zinc-400">
                   PT. Adriean Suma Jaya merupakan perusahaan yang bergerak di
-                  bidang transportasi dan distribusi bahan bakar minyak dengan
-                  pengalaman lebih dari 18 tahun.
+                  bidang transportasi serta distribusi bahan bakar minyak dengan
+                  pengalaman lebih dari
+                  <span class="text-white font-semibold">18 tahun</span>. Kami
+                  berkomitmen menghadirkan layanan yang aman, cepat, dan dapat
+                  dipercaya untuk memenuhi kebutuhan logistik energi di
+                  Indonesia.
                 </p>
 
-                <p class="mt-6 text-lg leading-9 text-gray-600">
-                  Dengan armada modern, tenaga kerja profesional, serta standar
-                  keselamatan yang tinggi, kami berkomitmen memberikan pelayanan
-                  yang aman, tepat waktu, dan berkualitas kepada seluruh
-                  pelanggan di Indonesia.
+                <p class="mt-6 text-lg leading-9 text-zinc-400">
+                  Didukung armada modern, sumber daya manusia profesional, dan
+                  penerapan standar keselamatan kerja yang tinggi, kami terus
+                  memberikan pelayanan terbaik kepada berbagai sektor industri
+                  dan mitra bisnis di seluruh Indonesia.
                 </p>
               </div>
 
               <!-- STATS -->
 
-              <div class="grid grid-cols-2 gap-6 mt-12">
+              <div class="grid grid-cols-2 gap-6 mt-14">
+                <!-- CARD -->
+
                 <div
                   data-aos="zoom-in"
                   data-aos-delay="100"
-                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                  class="group bg-[#181818] border border-white/10 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.18)]"
                 >
-                  <h3 class="text-4xl font-bold text-red-600">18+</h3>
+                  <h3 class="text-5xl font-bold text-secondary">18+</h3>
 
-                  <p class="mt-2 text-gray-600">Tahun Pengalaman</p>
+                  <p class="mt-3 text-zinc-400">Tahun Pengalaman</p>
                 </div>
 
                 <div
                   data-aos="zoom-in"
                   data-aos-delay="250"
-                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                  class="group bg-[#181818] border border-white/10 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.18)]"
                 >
-                  <h3 class="text-4xl font-bold text-red-600">50+</h3>
+                  <h3 class="text-5xl font-bold text-secondary">50+</h3>
 
-                  <p class="mt-2 text-gray-600">Karyawan Profesional</p>
+                  <p class="mt-3 text-zinc-400">Karyawan Profesional</p>
                 </div>
 
                 <div
                   data-aos="zoom-in"
                   data-aos-delay="400"
-                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                  class="group bg-[#181818] border border-white/10 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.18)]"
                 >
-                  <h3 class="text-4xl font-bold text-red-600">500+</h3>
+                  <h3 class="text-5xl font-bold text-secondary">500+</h3>
 
-                  <p class="mt-2 text-gray-600">Klien Nasional</p>
+                  <p class="mt-3 text-zinc-400">Klien Nasional</p>
                 </div>
 
                 <div
                   data-aos="zoom-in"
                   data-aos-delay="550"
-                  class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition duration-300"
+                  class="group bg-[#181818] border border-white/10 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.18)]"
                 >
-                  <h3 class="text-4xl font-bold text-red-600">1300+</h3>
+                  <h3 class="text-5xl font-bold text-secondary">1300+</h3>
 
-                  <p class="mt-2 text-gray-600">Project Selesai</p>
+                  <p class="mt-3 text-zinc-400">Project Selesai</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Services Grid -->
+
       <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface"
         id="services"
+        class="relative py-28 overflow-hidden bg-gradient-to-b from-[#151515] via-[#101010] to-[#0B0B0B]"
       >
-        <div class="max-w-container-max mx-auto">
-          <div class="text-center mb-16">
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-4"
+        <!-- Background Glow -->
+        <div
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-secondary/5 blur-[180px] rounded-full"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <!-- Heading -->
+
+          <div class="text-center mb-20" data-aos="fade-up">
+            <span
+              class="inline-flex items-center px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-sm font-semibold tracking-[0.2em]"
             >
-              Layanan Utama
+              OUR SERVICES
+            </span>
+
+            <h2 class="mt-6 text-5xl lg:text-6xl font-extrabold text-white">
+              Layanan
+              <span class="text-secondary">Profesional</span>
             </h2>
-            <div class="w-16 h-1 bg-secondary mx-auto"></div>
+
+            <p class="mt-6 max-w-3xl mx-auto text-lg leading-8 text-zinc-400">
+              Kami menyediakan berbagai layanan transportasi BBM dan logistik
+              energi dengan standar keselamatan tinggi, armada modern, serta
+              pengiriman yang tepat waktu.
+            </p>
+
+            <div class="w-24 h-1 rounded-full bg-secondary mx-auto mt-8"></div>
           </div>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
-          >
+
+          <!-- Services -->
+
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <!-- CARD 1 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl"
-                  >local_shipping</span
-                >
+                <span class="material-symbols-outlined text-3xl">
+                  local_shipping
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
+
+              <h3 class="text-2xl font-bold text-white mb-4">
                 Transportasi BBM
               </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
+
+              <p class="text-zinc-400 leading-8">
                 Layanan pengiriman bahan bakar minyak dengan standar keamanan
-                tinggi.
+                tinggi dan armada yang modern.
               </p>
             </div>
+
+            <!-- CARD 2 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl"
-                  >oil_barrel</span
-                >
+                <span class="material-symbols-outlined text-3xl">
+                  oil_barrel
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
+
+              <h3 class="text-2xl font-bold text-white mb-4">
                 Distribusi Biosolar
               </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Suplai Biosolar B30 yang efisien untuk kebutuhan industri.
+
+              <p class="text-zinc-400 leading-8">
+                Suplai Biosolar B30 yang efisien untuk kebutuhan industri dan
+                sektor energi.
               </p>
             </div>
+
+            <!-- CARD 3 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl">propane</span>
+                <span class="material-symbols-outlined text-3xl">
+                  propane
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
-                Pengangkutan Pertamina Dex
-              </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Distribusi bahan bakar diesel premium untuk kendaraan modern.
+
+              <h3 class="text-2xl font-bold text-white mb-4">Pertamina Dex</h3>
+
+              <p class="text-zinc-400 leading-8">
+                Distribusi bahan bakar diesel premium untuk kendaraan modern dan
+                operasional industri.
               </p>
             </div>
+
+            <!-- CARD 4 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl"
-                  >water_drop</span
-                >
+                <span class="material-symbols-outlined text-3xl">
+                  water_drop
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
+
+              <h3 class="text-2xl font-bold text-white mb-4">
                 Distribusi Dexlite
               </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Pengiriman Dexlite andal untuk armada operasional Anda.
+
+              <p class="text-zinc-400 leading-8">
+                Pengiriman Dexlite yang cepat, aman, dan terpercaya untuk
+                seluruh wilayah operasional.
               </p>
             </div>
+
+            <!-- CARD 5 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl">factory</span>
+                <span class="material-symbols-outlined text-3xl">
+                  factory
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
+
+              <h3 class="text-2xl font-bold text-white mb-4">
                 Transportasi Industri
               </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Solusi logistik khusus untuk mendukung operasional manufaktur.
+
+              <p class="text-zinc-400 leading-8">
+                Solusi logistik untuk mendukung kebutuhan operasional industri
+                secara efisien.
               </p>
             </div>
+
+            <!-- CARD 6 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl">route</span>
+                <span class="material-symbols-outlined text-3xl"> route </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
+
+              <h3 class="text-2xl font-bold text-white mb-4">
                 Logistik Energi
               </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Perencanaan rute optimal untuk efisiensi distribusi energi.
+
+              <p class="text-zinc-400 leading-8">
+                Perencanaan rute dan distribusi energi secara optimal untuk
+                efisiensi operasional.
               </p>
             </div>
+
+            <!-- CARD 7 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl">schedule</span>
+                <span class="material-symbols-outlined text-3xl">
+                  schedule
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
-                Pengiriman Tepat Waktu
-              </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Jaminan kedatangan sesuai jadwal tanpa kompromi kualitas.
+
+              <h3 class="text-2xl font-bold text-white mb-4">Tepat Waktu</h3>
+
+              <p class="text-zinc-400 leading-8">
+                Pengiriman sesuai jadwal dengan sistem monitoring yang
+                memastikan ketepatan distribusi.
               </p>
             </div>
+
+            <!-- CARD 8 -->
+
             <div
-              class="bg-white p-6 rounded-lg border border-outline-variant hover:shadow-lg transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_40px_rgba(214,40,40,.18)]"
             >
               <div
-                class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-4 text-secondary"
+                class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition"
               >
-                <span class="material-symbols-outlined text-2xl"
-                  >directions_car</span
-                >
+                <span class="material-symbols-outlined text-3xl">
+                  directions_car
+                </span>
               </div>
-              <h3
-                class="text-headline-md font-headline-md text-on-surface mb-2 text-lg"
-              >
+
+              <h3 class="text-2xl font-bold text-white mb-4">
                 Pengelolaan Armada
               </h3>
-              <p class="text-body-md font-body-md text-on-surface-variant">
-                Manajemen pemeliharaan kendaraan komprehensif berstandar tinggi.
+
+              <p class="text-zinc-400 leading-8">
+                Manajemen armada secara profesional untuk memastikan kendaraan
+                selalu dalam kondisi terbaik.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Products Section -->
       <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low"
         id="products"
+        class="relative py-28 overflow-hidden bg-gradient-to-b from-[#0B0B0B] via-[#111111] to-[#151515]"
       >
-        <div class="max-w-container-max mx-auto">
-          <div class="text-center mb-16">
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-4"
+        <!-- Background Glow -->
+        <div
+          class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-secondary/5 rounded-full blur-[180px]"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <!-- Heading -->
+          <div class="text-center mb-20" data-aos="fade-up">
+            <span
+              class="inline-flex items-center px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-sm font-semibold tracking-[0.2em]"
             >
-              Produk Kami
+              OUR PRODUCTS
+            </span>
+
+            <h2 class="mt-6 text-5xl lg:text-6xl font-extrabold text-white">
+              Produk
+              <span class="text-secondary">Berkualitas</span>
             </h2>
-            <div class="w-16 h-1 bg-secondary mx-auto mb-6"></div>
-            <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-              Menyediakan berbagai produk bahan bakar berkualitas untuk
-              kebutuhan industri dan otomotif.
+
+            <p class="mt-6 max-w-3xl mx-auto text-lg leading-8 text-zinc-400">
+              Menyediakan berbagai jenis bahan bakar berkualitas tinggi untuk
+              memenuhi kebutuhan industri, transportasi, dan operasional bisnis
+              di seluruh Indonesia.
             </p>
+
+            <div class="w-24 h-1 bg-secondary rounded-full mx-auto mt-8"></div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Product 1 -->
+
+          <!-- Product Grid -->
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- PRODUCT CARD -->
+            <!-- Duplikasikan card ini untuk semua produk -->
+
             <div
-              class="bg-white rounded-xl shadow-md overflow-hidden border border-outline-variant flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="group overflow-hidden rounded-3xl bg-[#181818] border border-white/10 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)] flex flex-col"
             >
-              <div class="h-48 bg-surface-container relative">
+              <div class="overflow-hidden h-60">
                 <img
-                  alt="Biosolar"
-                  class="w-full h-full object-cover"
                   src="./resources/biosolar.png"
+                  alt="Biosolar"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
-              <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Biosolar (B40)
-                </h3>
-                <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Bio solar B40 merupakan hasil pencapuran solar dengan minyak
-                  nabati yang berasal dari minyak kelapa sawit atau Crude Palm
-                  Oil (CPO).
+
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-3xl font-bold text-white">Biosolar (B40)</h3>
+
+                <p class="mt-5 text-zinc-400 leading-8 flex-1">
+                  Bio Solar B40 merupakan campuran solar dengan minyak nabati
+                  berbasis Crude Palm Oil (CPO) yang ramah lingkungan dan
+                  efisien.
                 </p>
-                <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
-                  <p class="text-sm font-semibold text-secondary mb-1">
-                    Spesifikasi Utama
+
+                <div
+                  class="mt-8 bg-[#101010] border border-white/10 rounded-2xl p-5"
+                >
+                  <p
+                    class="text-secondary font-semibold uppercase tracking-wider text-sm"
+                  >
+                    Spesifikasi
                   </p>
-                  <p class="text-sm text-on-surface-variant">
-                    Cetane Number: Min 48
+
+                  <p class="text-zinc-300 mt-2">
+                    Cetane Number
+                    <span class="text-white font-semibold"> Min 48 </span>
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Product 2 -->
+
+            <!-- Dexlite -->
+
             <div
-              class="bg-white rounded-xl shadow-md overflow-hidden border border-outline-variant flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              class="group overflow-hidden rounded-3xl bg-[#181818] border border-white/10 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)] flex flex-col"
             >
-              <div class="h-48 bg-surface-container relative">
+              <div class="overflow-hidden h-60">
                 <img
-                  alt="Dexlite"
-                  class="w-full h-full object-cover"
                   src="./resources/dexlite.png"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
-              <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Dexlite
-                </h3>
-                <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Varian bahan bakar diesel modern untuk performa mesin yang
-                  tangguh dan bertenaga.
+
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-3xl font-bold text-white">Dexlite</h3>
+
+                <p class="mt-5 text-zinc-400 leading-8 flex-1">
+                  Bahan bakar diesel modern dengan performa tinggi, pembakaran
+                  lebih sempurna, dan efisiensi maksimal.
                 </p>
-                <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
-                  <p class="text-sm font-semibold text-secondary mb-1">
-                    Spesifikasi Utama
+
+                <div
+                  class="mt-8 bg-[#101010] border border-white/10 rounded-2xl p-5"
+                >
+                  <p
+                    class="text-secondary font-semibold uppercase tracking-wider text-sm"
+                  >
+                    Spesifikasi
                   </p>
-                  <p class="text-sm text-on-surface-variant">
-                    Cetane Number: Min 51
+
+                  <p class="text-zinc-300 mt-2">
+                    Cetane Number
+                    <span class="text-white font-semibold"> Min 51 </span>
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Product 3 -->
+
+            <!-- Pertamina Dex -->
+
             <div
-              class="bg-white rounded-xl shadow-md overflow-hidden border border-outline-variant flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              class="group overflow-hidden rounded-3xl bg-[#181818] border border-white/10 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)] flex flex-col"
             >
-              <div class="h-48 bg-surface-container relative">
+              <div class="overflow-hidden h-60">
                 <img
-                  alt="Pertamina Dex"
-                  class="w-full h-full object-cover"
                   src="./resources/pertaminadex.png"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
-              <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Pertamina Dex
-                </h3>
-                <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Bahan bakar diesel premium terbaik, memastikan mesin lebih
-                  bersih dan awet.
+
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-3xl font-bold text-white">Pertamina Dex</h3>
+
+                <p class="mt-5 text-zinc-400 leading-8 flex-1">
+                  Diesel premium berkualitas tinggi yang menjaga performa mesin
+                  tetap optimal serta emisi lebih bersih.
                 </p>
-                <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
-                  <p class="text-sm font-semibold text-secondary mb-1">
-                    Spesifikasi Utama
+
+                <div
+                  class="mt-8 bg-[#101010] border border-white/10 rounded-2xl p-5"
+                >
+                  <p
+                    class="text-secondary font-semibold uppercase tracking-wider text-sm"
+                  >
+                    Spesifikasi
                   </p>
-                  <p class="text-sm text-on-surface-variant">
-                    Cetane Number: Min 53
+
+                  <p class="text-zinc-300 mt-2">
+                    Cetane Number
+                    <span class="text-white font-semibold"> Min 53 </span>
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Product 4 -->
+
+            <!-- Pertalite -->
+
             <div
-              class="bg-white rounded-xl shadow-md overflow-hidden border border-outline-variant flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              class="group overflow-hidden rounded-3xl bg-[#181818] border border-white/10 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)] flex flex-col"
             >
-              <div class="h-48 bg-surface-container relative">
+              <div class="overflow-hidden h-60">
                 <img
-                  alt="Pertalite"
-                  class="w-full h-full object-cover"
                   src="./resources/pertalite.png"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
-              <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Pertalite
-                </h3>
-                <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Bahan bakar gasoline yang ideal untuk kendaraan sehari-hari
-                  dengan efisiensi tinggi.
+
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-3xl font-bold text-white">Pertalite</h3>
+
+                <p class="mt-5 text-zinc-400 leading-8 flex-1">
+                  Bahan bakar bensin berkualitas untuk kendaraan harian dengan
+                  efisiensi tinggi dan pembakaran yang stabil.
                 </p>
-                <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
-                  <p class="text-sm font-semibold text-secondary mb-1">
-                    Spesifikasi Utama
+
+                <div
+                  class="mt-8 bg-[#101010] border border-white/10 rounded-2xl p-5"
+                >
+                  <p
+                    class="text-secondary font-semibold uppercase tracking-wider text-sm"
+                  >
+                    Spesifikasi
                   </p>
-                  <p class="text-sm text-on-surface-variant">RON: Min 90</p>
+
+                  <p class="text-zinc-300 mt-2">
+                    RON
+                    <span class="text-white font-semibold"> Min 90 </span>
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- Product 5 -->
+
+            <!-- Pertamax -->
+
             <div
-              class="bg-white rounded-xl shadow-md overflow-hidden border border-outline-variant flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              class="group overflow-hidden rounded-3xl bg-[#181818] border border-white/10 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)] flex flex-col"
             >
-              <div class="h-48 bg-surface-container relative">
+              <div class="overflow-hidden h-60">
                 <img
-                  alt="Pertamax"
-                  class="w-full h-full object-cover"
                   src="./resources/pertamax.png"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
-              <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Pertamax
-                </h3>
-                <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Bahan bakar bensin berkualitas tinggi, dirancang untuk
-                  akselerasi optimal.
+
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-3xl font-bold text-white">Pertamax</h3>
+
+                <p class="mt-5 text-zinc-400 leading-8 flex-1">
+                  Bahan bakar bensin berkualitas tinggi untuk menghasilkan
+                  akselerasi yang responsif dan performa mesin maksimal.
                 </p>
-                <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
-                  <p class="text-sm font-semibold text-secondary mb-1">
-                    Spesifikasi Utama
+
+                <div
+                  class="mt-8 bg-[#101010] border border-white/10 rounded-2xl p-5"
+                >
+                  <p
+                    class="text-secondary font-semibold uppercase tracking-wider text-sm"
+                  >
+                    Spesifikasi
                   </p>
-                  <p class="text-sm text-on-surface-variant">RON: Min 92</p>
+
+                  <p class="text-zinc-300 mt-2">
+                    RON
+                    <span class="text-white font-semibold"> Min 92 </span>
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- Product 6 -->
+
+            <!-- Pertamax Turbo -->
+
             <div
-              class="bg-white rounded-xl shadow-md overflow-hidden border border-outline-variant flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+              class="group overflow-hidden rounded-3xl bg-[#181818] border border-white/10 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)] flex flex-col"
             >
-              <div class="h-48 bg-surface-container relative">
+              <div class="overflow-hidden h-60">
                 <img
-                  alt="Pertamax Turbo"
-                  class="w-full h-full object-cover"
                   src="./resources/turbo.png"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
-              <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-headline-md font-bold text-on-surface mb-2">
-                  Pertamax Turbo
-                </h3>
-                <p class="text-body-md text-on-surface-variant mb-4 flex-1">
-                  Bahan bakar kelas premium untuk performa maksimal kendaraan
-                  bermesin canggih.
+
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-3xl font-bold text-white">Pertamax Turbo</h3>
+
+                <p class="mt-5 text-zinc-400 leading-8 flex-1">
+                  Bahan bakar premium beroktan tinggi yang dirancang untuk
+                  kendaraan berperforma tinggi dan teknologi mesin terbaru.
                 </p>
-                <div class="bg-surface-container-low p-4 rounded-lg mt-auto">
-                  <p class="text-sm font-semibold text-secondary mb-1">
-                    Spesifikasi Utama
+
+                <div
+                  class="mt-8 bg-[#101010] border border-white/10 rounded-2xl p-5"
+                >
+                  <p
+                    class="text-secondary font-semibold uppercase tracking-wider text-sm"
+                  >
+                    Spesifikasi
                   </p>
-                  <p class="text-sm text-on-surface-variant">RON: Min 98</p>
+
+                  <p class="text-zinc-300 mt-2">
+                    RON
+                    <span class="text-white font-semibold"> Min 98 </span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Operational Gallery -->
+
       <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface"
         id="gallery"
+        class="relative py-28 overflow-hidden bg-gradient-to-b from-[#111111] via-[#0D0D0D] to-[#000000]"
       >
-        <div class="max-w-container-max mx-auto">
-          <div class="text-center mb-16">
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-4"
+        <!-- Background Glow -->
+        <div
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-secondary/5 blur-[170px] rounded-full"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <!-- Heading -->
+          <div class="text-center mb-20" data-aos="fade-up">
+            <span
+              class="inline-flex items-center px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-sm font-semibold tracking-[0.2em]"
             >
-              Galeri Operasional
+              OUR GALLERY
+            </span>
+
+            <h2 class="mt-6 text-5xl lg:text-6xl font-extrabold text-white">
+              Dokumentasi
+              <span class="text-secondary">Operasional</span>
             </h2>
-            <div class="w-16 h-1 bg-secondary mx-auto"></div>
+
+            <p class="mt-6 max-w-3xl mx-auto text-lg leading-8 text-zinc-400">
+              Dokumentasi kegiatan operasional, armada, distribusi BBM, serta
+              komitmen PT. Adriean Suma Jaya dalam memberikan layanan terbaik
+              kepada pelanggan.
+            </p>
+
+            <div class="w-24 h-1 bg-secondary rounded-full mx-auto mt-8"></div>
           </div>
+
+          <!-- Gallery -->
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-[220px]"
           >
+            <!-- Image 1 -->
             <div
-              class="sm:col-span-2 sm:row-span-2 rounded-lg overflow-hidden relative group"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="group relative sm:col-span-2 sm:row-span-2 overflow-hidden rounded-3xl border border-white/10"
             >
               <img
-                alt="Fleet"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeoSSPWqphZkSTZiQFypYJg9d3YjBefgjV-jbRtlhM7CFR2HIeD5vSCtrgDT86zgcOQBTgwh3kFN2zWmCkWJjfmiFxjuDhNJxY2LQzdnHNbM4u7yk8HNf19QK6z-WC_OttdH5LudHxvoNp_8dp2yxdvt_nywk4pk3hHQ2KEAqotiH7YYtyM72V1qR1F-o8AsbUD_KLOs5Vo2fcrm8xjUPH0Td7K7L3LhyLVvbiwEFu-4ippdZSE1SSozZXEz0--oA3sH9ZUCyRcnM"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
+
               <div
-                class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-8"
               >
-                <span class="text-white font-bold text-xl">Armada Kami</span>
+                <span
+                  class="material-symbols-outlined text-secondary text-5xl mb-3"
+                >
+                  local_shipping
+                </span>
+
+                <h3 class="text-white text-2xl font-bold">
+                  Armada Operasional
+                </h3>
+
+                <p class="text-zinc-300 mt-2">
+                  Armada modern yang siap mendukung distribusi energi ke seluruh
+                  Indonesia.
+                </p>
               </div>
             </div>
-            <div class="rounded-lg overflow-hidden relative group">
+
+            <!-- Image 2 -->
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="group relative overflow-hidden rounded-3xl border border-white/10"
+            >
               <img
-                alt="Delivery"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFQntpAEvJwlq-fdqziB9rfjTh_QrMXOZvsUV8Gutd2HN7VHvpK_GJDGa4QZQIv969X4FGpoJwdP71lHLNVzIoBmzLtc8HoHbZdMkgWuoodrUR0f_TBf0fpDv6D1xWBYZZp4Xb_0ELb5PhW7tAP6KG169jCGULjYi-1P_ax4FvoNPfg68dmvZUUhMY7ei3I5I7mO9nfwqbeB3gs5aHYxp7hWZq-k9-jErsXe3psI7cuoUh0gXtEUtFWmGtrshaiRDcM2Q_kSPIOg"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
+
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <span class="text-white text-xl font-bold"> Distribusi </span>
+              </div>
             </div>
-            <div class="rounded-lg overflow-hidden relative group">
+
+            <!-- Image 3 -->
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              class="group relative overflow-hidden rounded-3xl border border-white/10"
+            >
               <img
-                alt="Team"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO4PTDuuIGU-U-b2YJMJBh6vCWwjjiyVdN-k6tUrsHZ4qiEsGA0xaE25LF4yg6A9bK554yWJo-gVCyoVMxvjTuul8BkGnZpQGTOmmCsEwPNtsQwTQS6GCtdK0YjIFKjiMdEoMiMcL0HwqMo1EZkKba0j53GDCYHY6OfunVbKimiWLpyRX-DiF86HKk3LLG22oj19tnNl2kum1HEINXAdJ_uMuAeDW88FoG8-Tdqek2nVlWjv_ZkV8Gl7o4BNMZgvHTyWBWdPGHKQ8"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
+
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <span class="text-white text-xl font-bold">
+                  Tim Profesional
+                </span>
+              </div>
             </div>
+
+            <!-- Image 4 -->
             <div
-              class="sm:col-span-2 rounded-lg overflow-hidden relative group"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              class="group relative sm:col-span-2 overflow-hidden rounded-3xl border border-white/10"
             >
               <img
-                alt="Field work"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9kKsyZ5AsbUEQSpQ__3am7rlUiOQuRs2ZYWAUAsEPGAOYn_gffClz7uoyqYI7f5cid7-XNgiZx9UoqQrMLCArlAHWwC70_sRnvlziMX8hXdOOEgDCrMysOhU3ByMUUGlpQyEZiAv0grMtoYZZCsOv5MZEt5DjLgh-WJxbnPQU7p0rK2miUo4GMabESZ4OsXz54PsMvkILm15vQqCnJQKQ2bN0kUP9iDLJBjLMhr5ClUG_2nvUSTE0SwvMhyvHlxHGikL8g9DBJ14"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-center p-8"
+              >
+                <div>
+                  <h3 class="text-3xl font-bold text-white">
+                    Aktivitas Lapangan
+                  </h3>
+
+                  <p class="mt-3 text-zinc-300 max-w-md">
+                    Seluruh proses operasional dilakukan sesuai standar
+                    keselamatan, kualitas, dan ketepatan waktu.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Why Choose Us -->
+
       <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low"
+        id="advantages"
+        class="relative py-28 overflow-hidden bg-gradient-to-b from-[#000000] via-[#0D0D0D] to-[#111111]"
       >
-        <div class="max-w-container-max mx-auto">
-          <div class="text-center mb-16">
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-4"
+        <!-- Background Glow -->
+        <div
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-secondary/5 blur-[180px] rounded-full"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <!-- Heading -->
+          <div class="text-center mb-20" data-aos="fade-up">
+            <span
+              class="inline-flex items-center px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-sm font-semibold tracking-[0.2em]"
             >
-              Mengapa Memilih Kami
+              WHY CHOOSE US
+            </span>
+
+            <h2 class="mt-6 text-5xl lg:text-6xl font-extrabold text-white">
+              Mengapa
+              <span class="text-secondary">Memilih Kami</span>
             </h2>
-            <div class="w-16 h-1 bg-secondary mx-auto"></div>
+
+            <p class="mt-6 max-w-3xl mx-auto text-lg leading-8 text-zinc-400">
+              Kami menghadirkan layanan distribusi BBM dan logistik energi
+              dengan standar keselamatan tinggi, profesionalisme, dan komitmen
+              terhadap kualitas pelayanan terbaik.
+            </p>
+
+            <div class="w-24 h-1 bg-secondary rounded-full mx-auto mt-8"></div>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+          <!-- Grid -->
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >local_shipping</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">Armada Lengkap</h4>
-              <p class="text-sm text-on-surface-variant">
-                Kendaraan terawat dan siap pakai.
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  local_shipping
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">Armada Lengkap</h3>
+
+              <p class="text-zinc-400 leading-7">
+                Armada modern, terawat, dan siap mendukung distribusi BBM secara
+                aman.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >person</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  person
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">
                 Pengemudi Berpengalaman
-              </h4>
-              <p class="text-sm text-on-surface-variant">
-                Tim ahli di bidangnya.
+              </h3>
+
+              <p class="text-zinc-400 leading-7">
+                Seluruh pengemudi memiliki pengalaman dan sertifikasi sesuai
+                standar industri.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >health_and_safety</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">Standar Keamanan</h4>
-              <p class="text-sm text-on-surface-variant">
-                Kepatuhan HSE yang ketat.
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  health_and_safety
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">
+                Standar Keamanan
+              </h3>
+
+              <p class="text-zinc-400 leading-7">
+                Seluruh operasional mengikuti standar HSE untuk menjaga
+                keselamatan kerja.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >schedule</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">Tepat Waktu</h4>
-              <p class="text-sm text-on-surface-variant">
-                Pengiriman sesuai jadwal.
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  schedule
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">Tepat Waktu</h3>
+
+              <p class="text-zinc-400 leading-7">
+                Pengiriman dilakukan sesuai jadwal untuk menjaga kelancaran
+                operasional pelanggan.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >handshake</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  handshake
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">
                 Pelayanan Profesional
-              </h4>
-              <p class="text-sm text-on-surface-variant">
-                Fokus pada kepuasan klien.
+              </h3>
+
+              <p class="text-zinc-400 leading-7">
+                Mengutamakan kepuasan pelanggan melalui pelayanan yang cepat dan
+                profesional.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >gavel</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">Perizinan Lengkap</h4>
-              <p class="text-sm text-on-surface-variant">
-                Beroperasi secara legal.
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  gavel
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">
+                Perizinan Lengkap
+              </h3>
+
+              <p class="text-zinc-400 leading-7">
+                Seluruh kegiatan operasional berjalan sesuai regulasi dan
+                ketentuan pemerintah.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >domain</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">Keahlian Industri</h4>
-              <p class="text-sm text-on-surface-variant">
-                Pemahaman mendalam sektor energi.
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  domain
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">
+                Keahlian Industri
+              </h3>
+
+              <p class="text-zinc-400 leading-7">
+                Berpengalaman menangani distribusi energi untuk berbagai sektor
+                industri.
               </p>
             </div>
+
+            <!-- CARD -->
             <div
-              class="bg-white p-6 rounded-lg text-center border border-outline-variant hover:shadow-md transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+              class="group bg-[#181818] border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-secondary hover:shadow-[0_20px_45px_rgba(214,40,40,.18)]"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-secondary mb-4"
-                >workspace_premium</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mb-6"
               >
-              <h4 class="font-bold text-on-surface mb-2">Komitmen Kualitas</h4>
-              <p class="text-sm text-on-surface-variant">
-                Jaminan mutu terbaik.
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  workspace_premium
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3">
+                Komitmen Kualitas
+              </h3>
+
+              <p class="text-zinc-400 leading-7">
+                Memberikan layanan terbaik dengan standar mutu yang konsisten di
+                setiap proses.
               </p>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Clients -->
       <section
-        class="py-16 px-margin-mobile md:px-margin-desktop bg-surface border-y border-outline-variant overflow-hidden"
+        class="relative py-24 overflow-hidden bg-gradient-to-b from-[#111111] via-[#0D0D0D] to-[#000000]"
       >
-        <div class="max-w-container-max mx-auto">
-          <h3
-            class="text-center text-headline-md text-on-surface mb-10 font-semibold"
-          >
-            Dipercaya Oleh Mitra Industri
-          </h3>
+        <!-- Background Glow -->
+        <div
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-secondary/5 blur-[180px] rounded-full"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="text-center mb-20" data-aos="fade-up">
+            <span
+              class="inline-flex items-center px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-sm font-semibold tracking-[0.2em]"
+            >
+              OUR PARTNERS
+            </span>
+
+            <h2 class="mt-6 text-5xl lg:text-6xl font-extrabold text-white">
+              Dipercaya Oleh
+              <span class="text-secondary"> Mitra Industri </span>
+            </h2>
+
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-zinc-400 leading-8">
+              Kami dipercaya oleh berbagai perusahaan nasional dalam mendukung
+              distribusi BBM dan logistik energi secara profesional.
+            </p>
+
+            <div class="w-24 h-1 bg-secondary rounded-full mx-auto mt-8"></div>
+          </div>
 
           <div
             id="logoSlider"
-            class="overflow-x-scroll no-scrollbar cursor-grab active:cursor-grabbing select-none"
+            class="overflow-x-scroll no-scrollbar cursor-grab active:cursor-grabbing"
           >
-            <div id="logoTrack" class="flex w-max gap-24 items-center">
+            <div id="logoTrack" class="flex gap-10 w-max items-center py-3">
+              <!-- Logo -->
               <div
-                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMJUoU65EtfMjuKDKzU7FNqbNg8FKYg_u3eLsGa6yCQ&s=10"
-                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                  class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
 
               <div
-                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4DFkLxiPNF4HGzLxGj63_QY7L6r7VUlHf2Nq3cpZuA&s=10"
-                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                  class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
 
               <div
-                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUdZa_Z1qmBwynkFzCxkrrOhfvE3ok_IZ02UiIrN4t5g&s=10"
-                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                  class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
 
               <div
-                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzX5tpaNgepsx4QHMPo4U_WdDFMzgiv5jmPYPCGsUNdA&s=10"
-                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                  class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
 
               <div
-                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAIxnbQM__j164NlTN1FX5RPbQ-QeOU0hVK-DCKkes_g&s=10"
-                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                  class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
 
               <div
-                class="w-48 h-28 flex items-center justify-center flex-shrink-0"
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
                   src="./resources/sharp.jpg"
-                  class="max-w-full max-h-full object-contain transition duration-300 hover:scale-110"
+                  class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Legal Section -->
       <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low"
         id="legal"
+        class="relative py-28 overflow-hidden bg-gradient-to-b from-[#000000] via-[#0D0D0D] to-[#111111]"
       >
-        <div class="max-w-container-max mx-auto">
-          <div class="text-center mb-16">
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-4"
+        <div
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-secondary/5 blur-[170px] rounded-full"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="text-center mb-20" data-aos="fade-up">
+            <span
+              class="inline-flex px-5 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-secondary tracking-[0.2em] text-sm font-semibold"
             >
-              Legalitas Perusahaan
+              LEGAL DOCUMENT
+            </span>
+
+            <h2 class="mt-6 text-5xl lg:text-6xl font-extrabold text-white">
+              Legalitas
+              <span class="text-secondary"> Perusahaan </span>
             </h2>
-            <div class="w-16 h-1 bg-secondary mx-auto"></div>
+
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-zinc-400 leading-8">
+              PT Adriean Suma Jaya beroperasi secara resmi dengan seluruh
+              dokumen legal yang lengkap sesuai regulasi pemerintah Indonesia.
+            </p>
+
+            <div class="w-24 h-1 bg-secondary rounded-full mx-auto mt-8"></div>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div
-              class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center border border-outline-variant hover:shadow-md transition-shadow"
+              class="bg-[#181818] border border-white/10 rounded-3xl p-8 text-center hover:border-secondary hover:-translate-y-2 transition duration-500"
+              data-aos="zoom-in"
             >
-              <span class="material-symbols-outlined text-3xl text-primary mb-2"
-                >description</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mx-auto mb-5"
               >
-              <span class="font-bold text-on-surface">NIB</span>
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  description
+                </span>
+              </div>
+
+              <h3 class="text-white text-xl font-bold">NIB</h3>
             </div>
+
             <div
-              class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center border border-outline-variant hover:shadow-md transition-shadow"
+              class="bg-[#181818] border border-white/10 rounded-3xl p-8 text-center hover:border-secondary hover:-translate-y-2 transition duration-500"
+              data-aos="zoom-in"
+              data-aos-delay="100"
             >
-              <span class="material-symbols-outlined text-3xl text-primary mb-2"
-                >assignment_ind</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mx-auto mb-5"
               >
-              <span class="font-bold text-on-surface">NPWP</span>
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  assignment_ind
+                </span>
+              </div>
+
+              <h3 class="text-white text-xl font-bold">NPWP</h3>
             </div>
+
             <div
-              class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center border border-outline-variant hover:shadow-md transition-shadow"
+              class="bg-[#181818] border border-white/10 rounded-3xl p-8 text-center hover:border-secondary hover:-translate-y-2 transition duration-500"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
-              <span class="material-symbols-outlined text-3xl text-primary mb-2"
-                >gavel</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mx-auto mb-5"
               >
-              <span class="font-bold text-on-surface">Akta Pendirian</span>
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  gavel
+                </span>
+              </div>
+
+              <h3 class="text-white text-xl font-bold">Akta Pendirian</h3>
             </div>
+
             <div
-              class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center border border-outline-variant hover:shadow-md transition-shadow"
+              class="bg-[#181818] border border-white/10 rounded-3xl p-8 text-center hover:border-secondary hover:-translate-y-2 transition duration-500"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             >
-              <span class="material-symbols-outlined text-3xl text-primary mb-2"
-                >verified</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mx-auto mb-5"
               >
-              <span class="font-bold text-on-surface">SIUP</span>
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  verified
+                </span>
+              </div>
+
+              <h3 class="text-white text-xl font-bold">SIUP</h3>
             </div>
+
             <div
-              class="bg-white p-4 rounded-lg flex flex-col items-center justify-center text-center border border-outline-variant hover:shadow-md transition-shadow"
+              class="bg-[#181818] border border-white/10 rounded-3xl p-8 text-center hover:border-secondary hover:-translate-y-2 transition duration-500"
+              data-aos="zoom-in"
+              data-aos-delay="400"
             >
-              <span class="material-symbols-outlined text-3xl text-primary mb-2"
-                >account_balance</span
+              <div
+                class="w-16 h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center mx-auto mb-5"
               >
-              <span class="font-bold text-on-surface">Kemenkumham</span>
+                <span class="material-symbols-outlined text-secondary text-4xl">
+                  account_balance
+                </span>
+              </div>
+
+              <h3 class="text-white text-xl font-bold">Kemenkumham</h3>
             </div>
           </div>
         </div>
       </section>
-      <!-- Safety Commitment Section -->
-      <section
-        class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface"
-        id="safety"
-      >
-        <div
-          class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-        >
+
+      <section id="safety" class="relative py-28 bg-black overflow-hidden">
+        <!-- Background Accent -->
+        <div class="absolute inset-0">
           <div
-            class="order-2 md:order-1 relative rounded-xl overflow-hidden shadow-xl"
+            class="absolute top-0 left-0 w-96 h-96 bg-red-700/10 blur-[160px]"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-96 h-96 bg-red-600/10 blur-[180px]"
+          ></div>
+        </div>
+
+        <div
+          class="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center"
+        >
+          <!-- IMAGE -->
+          <div
+            class="order-2 lg:order-1"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
-            <img
-              alt="Safety Commitment"
-              class="w-full h-[500px] object-cover"
-              src="./resources/2.2.png"
-            />
-          </div>
-          <div class="order-1 md:order-2">
-            <h2
-              class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-6"
+            <div
+              class="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl group"
             >
-              Komitmen Keselamatan (HSE)
+              <img
+                src="./resources/2.2.png"
+                alt="Safety Commitment"
+                class="w-full h-[550px] object-cover transition duration-700 group-hover:scale-105"
+              />
+
+              <!-- Overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+              ></div>
+
+              <!-- Floating Badge -->
+              <div
+                class="absolute bottom-8 left-8 bg-red-600 text-white px-6 py-3 rounded-xl shadow-xl"
+              >
+                <p class="font-bold text-lg">HSE Priority</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div
+            class="order-1 lg:order-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <span
+              class="inline-flex items-center px-5 py-2 rounded-full bg-red-600/15 border border-red-600/40 text-red-400 text-sm font-semibold tracking-widest uppercase"
+            >
+              Safety First
+            </span>
+
+            <h2 class="mt-6 text-5xl font-bold text-white leading-tight">
+              Komitmen
+              <span class="text-red-600"> Keselamatan (HSE) </span>
             </h2>
-            <div class="w-16 h-1 bg-secondary mb-8"></div>
-            <p class="text-body-lg text-on-surface-variant mb-6">
-              Keselamatan adalah prioritas utama kami. Kami menerapkan standar
-              Health, Safety, and Environment (HSE) yang ketat di seluruh
-              operasi kami untuk melindungi karyawan, lingkungan, dan masyarakat
-              sekitar.
+
+            <p class="mt-8 text-lg leading-9 text-gray-300">
+              Keselamatan merupakan prioritas utama dalam setiap aktivitas
+              operasional PT. Adriean Suma Jaya. Kami menerapkan standar
+              <span class="text-white font-semibold">
+                Health, Safety & Environment (HSE)
+              </span>
+              secara menyeluruh demi melindungi karyawan, pelanggan, lingkungan,
+              dan masyarakat sekitar.
             </p>
-            <ul class="flex flex-col gap-4">
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-secondary mt-1"
-                  >check_circle</span
+
+            <!-- Checklist -->
+            <div class="mt-10 space-y-5">
+              <div
+                class="flex items-start gap-4 bg-zinc-900 border border-white/10 rounded-2xl p-5 hover:border-red-600/40 transition"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div
+                  class="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0"
                 >
-                <span class="text-body-md text-on-surface-variant"
-                  >Pelatihan rutin untuk seluruh staf dan pengemudi.</span
+                  <span class="material-symbols-outlined text-white">
+                    check
+                  </span>
+                </div>
+
+                <div>
+                  <h4 class="text-white font-semibold mb-1">
+                    Pelatihan Berkala
+                  </h4>
+
+                  <p class="text-gray-400">
+                    Seluruh staf dan pengemudi mendapatkan pelatihan HSE secara
+                    rutin.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 bg-zinc-900 border border-white/10 rounded-2xl p-5 hover:border-red-600/40 transition"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div
+                  class="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0"
                 >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-secondary mt-1"
-                  >check_circle</span
+                  <span class="material-symbols-outlined text-white">
+                    engineering
+                  </span>
+                </div>
+
+                <div>
+                  <h4 class="text-white font-semibold mb-1">Inspeksi Armada</h4>
+
+                  <p class="text-gray-400">
+                    Pemeriksaan kendaraan dan peralatan dilakukan secara
+                    berkala.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 bg-zinc-900 border border-white/10 rounded-2xl p-5 hover:border-red-600/40 transition"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div
+                  class="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0"
                 >
-                <span class="text-body-md text-on-surface-variant"
-                  >Inspeksi peralatan dan armada secara berkala.</span
+                  <span class="material-symbols-outlined text-white">
+                    health_and_safety
+                  </span>
+                </div>
+
+                <div>
+                  <h4 class="text-white font-semibold mb-1">Penggunaan APD</h4>
+
+                  <p class="text-gray-400">
+                    Penggunaan Alat Pelindung Diri diwajibkan di seluruh area
+                    kerja.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 bg-zinc-900 border border-white/10 rounded-2xl p-5 hover:border-red-600/40 transition"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div
+                  class="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0"
                 >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-secondary mt-1"
-                  >check_circle</span
-                >
-                <span class="text-body-md text-on-surface-variant"
-                  >Penggunaan APD (Alat Pelindung Diri) wajib.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-secondary mt-1"
-                  >check_circle</span
-                >
-                <span class="text-body-md text-on-surface-variant"
-                  >Prosedur tanggap darurat yang siap sedia.</span
-                >
-              </li>
-            </ul>
+                  <span class="material-symbols-outlined text-white">
+                    emergency
+                  </span>
+                </div>
+
+                <div>
+                  <h4 class="text-white font-semibold mb-1">Tanggap Darurat</h4>
+
+                  <p class="text-gray-400">
+                    Memiliki prosedur penanganan keadaan darurat yang siap
+                    diterapkan kapan saja.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- CTA Section -->
-      <section
-        class="relative py-24 px-margin-mobile md:px-margin-desktop bg-primary text-center"
-      >
+      <!-- ================= CTA SECTION ================= -->
+      <section class="relative py-32 overflow-hidden bg-black" id="contact">
+        <!-- Background Image -->
         <div
-          class="absolute inset-0 w-full h-full bg-cover bg-center"
-          style="
-            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AGiE1zFnjP1Z3B3C84b0j3sF_i4uT42zGqKk3N7x7i2z83-7jW7-54-4z-7BwzJc-q3Zk3ZzZ4N4-yT0P7mPj7D_3Dq5m3tW-7jW7-54-4z-7BwzJc-q3Zk3ZzZ4N4-y&quot;);
-          "
+          class="absolute inset-0 bg-cover bg-center scale-110"
+          style="background-image: url(&quot;./resources/2.5.png&quot;)"
         ></div>
-        <div class="absolute inset-0 bg-inverse-surface/80"></div>
-        <div class="relative z-10 max-w-3xl mx-auto">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/80"></div>
+
+        <!-- Red Glow -->
+        <div
+          class="absolute top-0 left-0 w-96 h-96 bg-red-700/20 blur-[180px]"
+        ></div>
+
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-red-600/20 blur-[180px]"
+        ></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+          <!-- Badge -->
+          <div
+            data-aos="zoom-in"
+            class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-red-600/40 bg-red-600/10 text-red-400 text-sm font-semibold uppercase tracking-[3px]"
+          >
+            <span class="material-symbols-outlined text-base"> handshake </span>
+
+            Let's Work Together
+          </div>
+
+          <!-- Title -->
           <h2
-            class="text-display-lg-mobile md:text-display-lg font-bold text-white mb-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="mt-8 text-5xl lg:text-6xl font-bold text-white leading-tight"
           >
-            Siap Menjadi Mitra Distribusi Energi Anda
+            Siap Menjadi
+            <span class="text-red-600"> Mitra Distribusi Energi </span>
+            Terpercaya?
           </h2>
-          <p class="text-body-lg text-outline-variant mb-10">
-            Hubungi kami hari ini untuk mendiskusikan kebutuhan transportasi dan
-            logistik energi perusahaan Anda.
-          </p>
-          <button
-            class="bg-secondary text-white font-button text-button px-10 py-4 rounded-lg hover:bg-secondary-container transition-colors text-lg shadow-lg"
+
+          <!-- Description -->
+          <p
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="mt-8 text-xl text-gray-300 leading-9 max-w-3xl mx-auto"
           >
-            Hubungi Kami
-          </button>
+            Bersama PT. Adriean Suma Jaya, kami menghadirkan solusi transportasi
+            BBM dan logistik energi yang aman, profesional, tepat waktu, serta
+            didukung armada modern dan SDM berpengalaman.
+          </p>
+
+          <!-- Buttons -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="450"
+            class="mt-12 flex flex-col sm:flex-row justify-center gap-5"
+          >
+            <a
+              href="#location"
+              class="px-10 py-4 rounded-xl bg-red-600 text-white font-semibold text-lg shadow-lg shadow-red-600/30 hover:bg-red-700 hover:scale-105 transition duration-300"
+            >
+              Hubungi Kami
+            </a>
+
+            <a
+              href="#about"
+              class="px-10 py-4 rounded-xl border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold text-lg hover:bg-white/10 hover:border-red-500 transition duration-300"
+            >
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+
+          <!-- Divider -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="600"
+            class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
+          >
+            <div
+              class="bg-zinc-900/80 backdrop-blur-lg border border-white/10 rounded-2xl p-6"
+            >
+              <span
+                class="material-symbols-outlined text-red-500 text-5xl mb-4"
+              >
+                local_shipping
+              </span>
+
+              <h4 class="text-white font-bold text-xl">Armada Modern</h4>
+
+              <p class="text-gray-400 mt-2">
+                Armada transportasi BBM yang siap beroperasi dengan standar
+                keselamatan tinggi.
+              </p>
+            </div>
+
+            <div
+              class="bg-zinc-900/80 backdrop-blur-lg border border-white/10 rounded-2xl p-6"
+            >
+              <span
+                class="material-symbols-outlined text-red-500 text-5xl mb-4"
+              >
+                verified
+              </span>
+
+              <h4 class="text-white font-bold text-xl">Terpercaya</h4>
+
+              <p class="text-gray-400 mt-2">
+                Dipercaya berbagai perusahaan nasional dalam distribusi energi.
+              </p>
+            </div>
+
+            <div
+              class="bg-zinc-900/80 backdrop-blur-lg border border-white/10 rounded-2xl p-6"
+            >
+              <span
+                class="material-symbols-outlined text-red-500 text-5xl mb-4"
+              >
+                support_agent
+              </span>
+
+              <h4 class="text-white font-bold text-xl">24/7 Support</h4>
+
+              <p class="text-gray-400 mt-2">
+                Tim profesional siap membantu kebutuhan operasional Anda kapan
+                saja.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <section
-      class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface"
-      id="location"
-    >
-      <div class="max-w-container-max mx-auto">
-        <div class="text-center mb-16">
-          <h2
-            class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-4"
+    <!-- ================= LOCATION SECTION ================= -->
+    <section id="location" class="relative py-28 bg-black overflow-hidden">
+      <!-- Background Glow -->
+      <div
+        class="absolute top-0 right-0 w-[500px] h-[500px] bg-red-700/10 blur-[180px]"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-[450px] h-[450px] bg-red-600/10 blur-[180px]"
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Heading -->
+        <div class="text-center mb-20" data-aos="fade-up">
+          <span
+            class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-red-600/40 bg-red-600/10 text-red-400 text-sm uppercase tracking-[3px] font-semibold"
           >
-            Lokasi Kami
+            <span class="material-symbols-outlined text-base">
+              location_on
+            </span>
+
+            Our Office
+          </span>
+
+          <h2 class="mt-6 text-5xl font-bold text-white">
+            Lokasi
+            <span class="text-red-600"> Perusahaan </span>
           </h2>
-          <div class="w-16 h-1 bg-secondary mx-auto"></div>
+
+          <p class="mt-6 max-w-3xl mx-auto text-gray-400 text-lg leading-8">
+            Kunjungi kantor kami untuk berdiskusi mengenai kebutuhan
+            transportasi BBM, distribusi energi, maupun kerja sama bisnis.
+          </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Office Cards -->
+        <div class="grid lg:grid-cols-2 gap-10">
+          <!-- ================= HQ ================= -->
           <div
-            class="bg-white rounded-xl overflow-hidden shadow-md border border-outline-variant flex flex-col md:flex-row"
+            data-aos="fade-right"
+            class="overflow-hidden rounded-3xl bg-zinc-900 border border-white/10 hover:border-red-600/40 transition duration-500"
           >
-            <div class="w-full md:w-1/2 h-64 md:h-auto">
-              <iframe
-                allowfullscreen=""
-                height="100%"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.2415346106!2d106.789155!3d-6.229728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e3fa73%3A0x761c36c30845665!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
-                style="border: 0"
-                width="100%"
-              ></iframe>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-center">
-              <h3 class="text-headline-md font-bold text-on-surface mb-4">
-                Kantor Pusat
-              </h3>
-              <div
-                class="flex flex-col gap-3 text-on-surface-variant text-body-md"
-              >
-                <div class="flex items-start gap-2">
-                  <span class="material-symbols-outlined text-secondary"
-                    >location_on</span
-                  ><span>Jl. Sudirman No. 123, Jakarta Selatan, 12190</span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.2415346106!2d106.789155!3d-6.229728"
+              class="w-full h-80"
+              loading="lazy"
+              style="border: 0"
+            ></iframe>
+
+            <div class="p-8">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-14 h-14 rounded-xl bg-red-600 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-white">
+                    apartment
+                  </span>
                 </div>
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary"
-                    >phone</span
-                  ><span>+62 21 555 1234</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary"
-                    >mail</span
-                  ><span>hq@adrieansuma.com</span>
+
+                <div>
+                  <h3 class="text-2xl font-bold text-white">Kantor Pusat</h3>
+
+                  <p class="text-red-400">Head Office</p>
                 </div>
               </div>
+
+              <div class="space-y-5 text-gray-300">
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    location_on
+                  </span>
+
+                  <span>
+                    Jl. Sudirman No.123, Jakarta Selatan, Indonesia 12190
+                  </span>
+                </div>
+
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    phone
+                  </span>
+
+                  <span> +62 21 555 1234 </span>
+                </div>
+
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    mail
+                  </span>
+
+                  <span> hq@adrieansuma.com </span>
+                </div>
+
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    schedule
+                  </span>
+
+                  <span> Senin - Jumat • 08.00 - 17.00 WIB </span>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                class="mt-8 inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl text-white font-semibold transition duration-300"
+              >
+                Buka Google Maps
+
+                <span class="material-symbols-outlined"> north_east </span>
+              </a>
             </div>
           </div>
+
+          <!-- ================= OPERATIONAL ================= -->
+
           <div
-            class="bg-white rounded-xl overflow-hidden shadow-md border border-outline-variant flex flex-col md:flex-row"
+            data-aos="fade-left"
+            class="overflow-hidden rounded-3xl bg-zinc-900 border border-white/10 hover:border-red-600/40 transition duration-500"
           >
-            <div class="w-full md:w-1/2 h-64 md:h-auto">
-              <iframe
-                allowfullscreen=""
-                height="100%"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.053847243456!2d106.8914!3d-6.2566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f30900000001%3A0x761c36c30845665!2sHalim%20Perdanakusuma%20International%20Airport!5e0!3m2!1sid!2sid!4v1710000000001!5m2!1sid!2sid"
-                style="border: 0"
-                width="100%"
-              ></iframe>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-center">
-              <h3 class="text-headline-md font-bold text-on-surface mb-4">
-                Kantor Operasional
-              </h3>
-              <div
-                class="flex flex-col gap-3 text-on-surface-variant text-body-md"
-              >
-                <div class="flex items-start gap-2">
-                  <span class="material-symbols-outlined text-secondary"
-                    >location_on</span
-                  ><span>Kawasan Industri Halim, Jakarta Timur, 13610</span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.053847243456!2d106.8914!3d-6.2566"
+              class="w-full h-80"
+              loading="lazy"
+              style="border: 0"
+            ></iframe>
+
+            <div class="p-8">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-14 h-14 rounded-xl bg-red-600 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-white">
+                    local_shipping
+                  </span>
                 </div>
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary"
-                    >phone</span
-                  ><span>+62 21 555 5678</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary"
-                    >mail</span
-                  ><span>ops@adrieansuma.com</span>
+
+                <div>
+                  <h3 class="text-2xl font-bold text-white">
+                    Kantor Operasional
+                  </h3>
+
+                  <p class="text-red-400">Operational Office</p>
                 </div>
               </div>
+
+              <div class="space-y-5 text-gray-300">
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    location_on
+                  </span>
+
+                  <span>
+                    Kawasan Industri Halim, Jakarta Timur, Indonesia
+                  </span>
+                </div>
+
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    phone
+                  </span>
+
+                  <span> +62 21 555 5678 </span>
+                </div>
+
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    mail
+                  </span>
+
+                  <span> ops@adrieansuma.com </span>
+                </div>
+
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-red-500">
+                    inventory
+                  </span>
+
+                  <span> Area Distribusi & Armada Logistik </span>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                class="mt-8 inline-flex items-center gap-2 border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-6 py-3 rounded-xl font-semibold transition duration-300"
+              >
+                Lihat Lokasi
+
+                <span class="material-symbols-outlined"> north_east </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="bg-[#111c2c] w-full bottom-0 border-t-4 border-secondary">
-      <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
-      >
-        <div class="col-span-1 md:col-span-2">
-          <div
-            class="text-headline-md font-headline-md font-bold text-white mb-6 flex items-baseline gap-2"
-          >
-            <img
-              src="./resources/ASJ.png"
-              alt="Logo PT. Adriean Suma Jaya"
-              class="w-8 h-8 object-contain"
-            />
-
-            <span>PT. Adriean Suma Jaya</span>
-          </div>
-          <p
-            class="text-body-md font-body-md text-outline-variant max-w-md mb-8"
-          >
-            Precision in Logistics &amp; Energy. Delivering excellence safely
-            across the nation.
-          </p>
-          <div class="flex gap-4">
-            <a
-              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary transition-colors"
-              href="#"
-              ><span class="material-symbols-outlined">facebook</span></a
-            >
-            <a
-              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary transition-colors"
-              href="#"
-              ><span class="material-symbols-outlined">photo_camera</span></a
-            >
-            <a
-              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary transition-colors"
-              href="#"
-              ><span class="material-symbols-outlined">work</span></a
-            >
-          </div>
-        </div>
-        <div>
-          <h4 class="text-headline-md font-headline-md text-white text-lg mb-6">
-            Quick Links
-          </h4>
-          <div class="flex flex-col gap-4">
-            <a
-              class="text-body-md font-body-md text-outline-variant hover:text-white transition-colors"
-              href="#about"
-              >About Us</a
-            >
-            <a
-              class="text-body-md font-body-md text-outline-variant hover:text-white transition-colors"
-              href="#services"
-              >Services</a
-            >
-            <a
-              class="text-body-md font-body-md text-outline-variant hover:text-white transition-colors"
-              href="#products"
-              >Products</a
-            >
-            <a
-              class="text-body-md font-body-md text-outline-variant hover:text-white transition-colors"
-              href="#safety"
-              >HSE Commitment</a
-            >
-          </div>
-        </div>
-        <div>
-          <h4 class="text-headline-md font-headline-md text-white text-lg mb-6">
-            Contact
-          </h4>
-          <div
-            class="flex flex-col gap-4 text-outline-variant text-body-md font-body-md"
-          >
-            <div class="flex items-start gap-3">
-              <span
-                class="material-symbols-outlined text-[20px] text-secondary mt-1"
-                >location_on</span
-              >
-              <span
-                >Jl. Sudirman No. 123, Jakarta Selatan, Indonesia 12190</span
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="material-symbols-outlined text-[20px] text-secondary"
-                >phone</span
-              >
-              <span>+62 21 555 1234</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="material-symbols-outlined text-[20px] text-secondary"
-                >mail</span
-              >
-              <span>info@adrieansuma.com</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="material-symbols-outlined text-[20px] text-secondary"
-                >schedule</span
-              >
-              <span>Senin - Jumat: 08.00 - 17.00</span>
-            </div>
-          </div>
-        </div>
+    <footer
+      class="relative bg-[#0A0A0A] border-t border-red-600/30 overflow-hidden"
+    >
+      <!-- Background Blur -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute top-0 left-1/3 w-72 h-72 bg-red-600/10 blur-[120px] rounded-full"
+        ></div>
+        <div
+          class="absolute bottom-0 right-1/4 w-80 h-80 bg-red-500/5 blur-[140px] rounded-full"
+        ></div>
       </div>
-      <div class="bg-black/50 py-4 text-center">
-        <div class="text-label-caps font-label-caps text-outline-variant">
-          © 2024 PT. Adriean Suma Jaya. All Rights Reserved.
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-4 gap-14">
+          <!-- Company -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="./resources/ASJ.png" class="w-12 h-12 object-contain" />
+
+              <div>
+                <h2 class="text-3xl font-bold text-white">
+                  PT. Adriean Suma Jaya
+                </h2>
+
+                <p class="text-red-500 text-sm tracking-[3px] uppercase mt-1">
+                  Energy Logistics
+                </p>
+              </div>
+            </div>
+
+            <p class="text-gray-400 leading-8 max-w-lg">
+              PT. Adriean Suma Jaya merupakan perusahaan transportasi dan
+              distribusi energi yang berkomitmen menghadirkan layanan logistik
+              yang aman, profesional, tepat waktu, dan terpercaya di seluruh
+              Indonesia.
+            </p>
+
+            <!-- Social -->
+            <div class="flex gap-4 mt-10">
+              <a
+                href="#"
+                class="w-12 h-12 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined"> public </span>
+              </a>
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined"> photo_camera </span>
+              </a>
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined"> work </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div>
+            <h3 class="text-xl font-bold text-white mb-8">Quick Links</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-red-500 transition"
+                >
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-red-500 transition"
+                >
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#products"
+                  class="text-gray-400 hover:text-red-500 transition"
+                >
+                  Products
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-gray-400 hover:text-red-500 transition"
+                >
+                  Gallery
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-red-500 transition"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div>
+            <h3 class="text-xl font-bold text-white mb-8">Contact</h3>
+
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-red-500">
+                    location_on
+                  </span>
+                </div>
+
+                <p class="text-gray-400 leading-7">
+                  Jl. Sudirman No.123<br />
+                  Jakarta Selatan, Indonesia
+                </p>
+              </div>
+
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-red-500">
+                    phone
+                  </span>
+                </div>
+
+                <p class="text-gray-400">+62 21 555 1234</p>
+              </div>
+
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-red-500">
+                    mail
+                  </span>
+                </div>
+
+                <p class="text-gray-400">info@adrieansuma.com</p>
+              </div>
+
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-red-500">
+                    schedule
+                  </span>
+                </div>
+
+                <p class="text-gray-400">
+                  Senin - Jumat<br />
+                  08.00 - 17.00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+
+        <div
+          class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-500 text-sm">
+            © 2026 PT. Adriean Suma Jaya. All Rights Reserved.
+          </p>
+
+          <div class="flex gap-8">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-red-500 text-sm transition"
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="#"
+              class="text-gray-500 hover:text-red-500 text-sm transition"
+            >
+              Terms of Service
+            </a>
+          </div>
         </div>
       </div>
     </footer>
