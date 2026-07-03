@@ -21,17 +21,17 @@
   </head>
 
   <body class="bg-background text-on-background">
-    <!-- TopNavBar -->
     <header
       data-aos="fade-down"
       data-aos-duration="1000"
       data-aos-easing="ease-out-cubic"
-      class="bg-surface dark:bg-inverse-surface w-full sticky top-0 z-50 backdrop-blur-md/80 transition-all duration-500"
+      class="bg-[#111111]/95 backdrop-blur-md sticky top-0 z-50 w-full shadow-lg"
     >
+      <!-- Container -->
       <div
         class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
       >
-        <!-- LOGO -->
+        <!-- Logo -->
         <div
           data-aos="fade-right"
           data-aos-delay="200"
@@ -45,89 +45,110 @@
           />
 
           <span
-            class="text-headline-md font-bold tracking-tight text-on-surface dark:text-inverse-on-surface"
+            class="text-xl font-bold tracking-tight text-white whitespace-nowrap"
           >
             PT. Adriean Suma Jaya
           </span>
         </div>
 
-        <!-- MENU -->
-        <nav class="hidden md:flex items-center gap-gutter">
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8">
           <a
             href="#"
-            data-aos="fade-down"
-            data-aos-delay="350"
-            class="font-bold text-secondary border-b-2 border-secondary pb-1 transition-all duration-300 hover:-translate-y-0.5"
+            class="nav-link font-semibold text-white hover:text-secondary transition duration-300"
           >
             Home
           </a>
 
           <a
             href="#about"
-            data-aos="fade-down"
-            data-aos-delay="450"
-            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
+            class="nav-link font-semibold text-white hover:text-secondary transition duration-300"
           >
             About
           </a>
 
           <a
             href="#services"
-            data-aos="fade-down"
-            data-aos-delay="550"
-            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
+            class="nav-link font-semibold text-white hover:text-secondary transition duration-300"
           >
             Services
           </a>
 
           <a
             href="#products"
-            data-aos="fade-down"
-            data-aos-delay="650"
-            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
+            class="nav-link font-semibold text-white hover:text-secondary transition duration-300"
           >
             Products
           </a>
 
           <a
             href="#gallery"
-            data-aos="fade-down"
-            data-aos-delay="750"
-            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
+            class="nav-link font-semibold text-white hover:text-secondary transition duration-300"
           >
             Gallery
           </a>
 
           <a
             href="#safety"
-            data-aos="fade-down"
-            data-aos-delay="850"
-            class="font-medium text-on-surface hover:text-secondary transition-all duration-300 hover:-translate-y-0.5"
+            class="nav-link font-semibold text-white hover:text-secondary transition duration-300"
           >
             Safety
           </a>
         </nav>
 
-        <!-- BUTTON -->
-        <div
-          class="hidden md:block"
-          data-aos="zoom-in"
-          data-aos-delay="1000"
-          data-aos-duration="900"
+        <!-- Desktop Button -->
+        <a
+          href="#location"
+          class="hidden md:flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg"
         >
-          <button
-            class="bg-secondary text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-xl hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300"
-          >
-            Contact Us
-          </button>
-        </div>
+          Contact Us
+        </a>
 
-        <!-- MOBILE -->
-        <button class="md:hidden" data-aos="fade-left" data-aos-delay="500">
-          <span class="material-symbols-outlined text-3xl"> menu </span>
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+          <span class="material-symbols-outlined text-4xl"> menu </span>
         </button>
       </div>
+
+      <!-- ================= MOBILE MENU ================= -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-[#111111] border-t border-white/10 overflow-hidden overflow-y-auto max-h-0 opacity-0 -translate-y-3 transition-all duration-500 ease-in-out"
+        style="max-height: calc(100vh - 80px)"
+      >
+        <nav class="flex flex-col py-2">
+          <a href="#" class="px-6 py-4 text-white hover:bg-white/5"> Home </a>
+
+          <a href="#about" class="px-6 py-4 text-white hover:bg-white/5">
+            About
+          </a>
+
+          <a href="#services" class="px-6 py-4 text-white hover:bg-white/5">
+            Services
+          </a>
+
+          <a href="#products" class="px-6 py-4 text-white hover:bg-white/5">
+            Products
+          </a>
+
+          <a href="#gallery" class="px-6 py-4 text-white hover:bg-white/5">
+            Gallery
+          </a>
+
+          <a href="#safety" class="px-6 py-4 text-white hover:bg-white/5">
+            Safety
+          </a>
+
+          <a
+            href="#location"
+            class="mx-6 my-4 bg-secondary text-center text-white py-3 rounded-lg font-semibold"
+          >
+            Contact Us
+          </a>
+        </nav>
+      </div>
     </header>
+    <!-- ================= END HEADER ================= -->
     <main>
       <!-- Hero Section -->
       <section
@@ -889,7 +910,7 @@
               class="group relative sm:col-span-2 sm:row-span-2 overflow-hidden rounded-3xl border border-white/10"
             >
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeoSSPWqphZkSTZiQFypYJg9d3YjBefgjV-jbRtlhM7CFR2HIeD5vSCtrgDT86zgcOQBTgwh3kFN2zWmCkWJjfmiFxjuDhNJxY2LQzdnHNbM4u7yk8HNf19QK6z-WC_OttdH5LudHxvoNp_8dp2yxdvt_nywk4pk3hHQ2KEAqotiH7YYtyM72V1qR1F-o8AsbUD_KLOs5Vo2fcrm8xjUPH0Td7K7L3LhyLVvbiwEFu-4ippdZSE1SSozZXEz0--oA3sH9ZUCyRcnM"
+                src="./resources/armada.png"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
 
@@ -907,7 +928,7 @@
                 </h3>
 
                 <p class="text-zinc-300 mt-2">
-                  Armada modern yang siap mendukung distribusi energi ke seluruh
+                  Armada yang siap mendukung distribusi energi ke seluruh
                   Indonesia.
                 </p>
               </div>
@@ -920,7 +941,7 @@
               class="group relative overflow-hidden rounded-3xl border border-white/10"
             >
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFQntpAEvJwlq-fdqziB9rfjTh_QrMXOZvsUV8Gutd2HN7VHvpK_GJDGa4QZQIv969X4FGpoJwdP71lHLNVzIoBmzLtc8HoHbZdMkgWuoodrUR0f_TBf0fpDv6D1xWBYZZp4Xb_0ELb5PhW7tAP6KG169jCGULjYi-1P_ax4FvoNPfg68dmvZUUhMY7ei3I5I7mO9nfwqbeB3gs5aHYxp7hWZq-k9-jErsXe3psI7cuoUh0gXtEUtFWmGtrshaiRDcM2Q_kSPIOg"
+                src="./resources/foto_distribusi.jpg"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
 
@@ -938,10 +959,10 @@
               class="group relative overflow-hidden rounded-3xl border border-white/10"
             >
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO4PTDuuIGU-U-b2YJMJBh6vCWwjjiyVdN-k6tUrsHZ4qiEsGA0xaE25LF4yg6A9bK554yWJo-gVCyoVMxvjTuul8BkGnZpQGTOmmCsEwPNtsQwTQS6GCtdK0YjIFKjiMdEoMiMcL0HwqMo1EZkKba0j53GDCYHY6OfunVbKimiWLpyRX-DiF86HKk3LLG22oj19tnNl2kum1HEINXAdJ_uMuAeDW88FoG8-Tdqek2nVlWjv_ZkV8Gl7o4BNMZgvHTyWBWdPGHKQ8"
-                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                src="./resources/tim.jpg"
+                alt="Tim Profesional"
+                class="w-full h-full object-cover object-center transition duration-700 ease-out group-hover:scale-110"
               />
-
               <div
                 class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
               >
@@ -958,7 +979,7 @@
               class="group relative sm:col-span-2 overflow-hidden rounded-3xl border border-white/10"
             >
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9kKsyZ5AsbUEQSpQ__3am7rlUiOQuRs2ZYWAUAsEPGAOYn_gffClz7uoyqYI7f5cid7-XNgiZx9UoqQrMLCArlAHWwC70_sRnvlziMX8hXdOOEgDCrMysOhU3ByMUUGlpQyEZiAv0grMtoYZZCsOv5MZEt5DjLgh-WJxbnPQU7p0rK2miUo4GMabESZ4OsXz54PsMvkILm15vQqCnJQKQ2bN0kUP9iDLJBjLMhr5ClUG_2nvUSTE0SwvMhyvHlxHGikL8g9DBJ14"
+                src="./resources/aktifitas_lapangan.jpg"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
 
@@ -1246,7 +1267,7 @@
                 class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMJUoU65EtfMjuKDKzU7FNqbNg8FKYg_u3eLsGa6yCQ&s=10"
+                  src="./resources/Logo-Danapaint-1.png"
                   class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
@@ -1255,7 +1276,16 @@
                 class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4DFkLxiPNF4HGzLxGj63_QY7L6r7VUlHf2Nq3cpZuA&s=10"
+                  src="./resources/waskita.png"
+                  class="max-w-[100%] max-h-[100%] object-contain"
+                />
+              </div>
+
+              <div
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
+              >
+                <img
+                  src="./resources/wika.png"
                   class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
@@ -1264,7 +1294,16 @@
                 class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUdZa_Z1qmBwynkFzCxkrrOhfvE3ok_IZ02UiIrN4t5g&s=10"
+                  src="./resources/gemala.png"
+                  class="max-w-[110%] max-h-[110%] object-contain"
+                />
+              </div>
+
+              <div
+                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
+              >
+                <img
+                  src="./resources/Lma.png"
                   class="max-w-[70%] max-h-[70%] object-contain"
                 />
               </div>
@@ -1273,26 +1312,8 @@
                 class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
               >
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzX5tpaNgepsx4QHMPo4U_WdDFMzgiv5jmPYPCGsUNdA&s=10"
-                  class="max-w-[70%] max-h-[70%] object-contain"
-                />
-              </div>
-
-              <div
-                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
-              >
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAIxnbQM__j164NlTN1FX5RPbQ-QeOU0hVK-DCKkes_g&s=10"
-                  class="max-w-[70%] max-h-[70%] object-contain"
-                />
-              </div>
-
-              <div
-                class="w-52 h-32 bg-[#181818] border border-white/10 rounded-3xl flex items-center justify-center transition duration-500 hover:border-secondary hover:shadow-[0_15px_35px_rgba(214,40,40,.2)]"
-              >
-                <img
-                  src="./resources/sharp.jpg"
-                  class="max-w-[70%] max-h-[70%] object-contain"
+                  src="./resources/sharp.png"
+                  class="max-w-[130%] max-h-[130%] object-contain"
                 />
               </div>
             </div>
@@ -1437,7 +1458,7 @@
               class="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl group"
             >
               <img
-                src="./resources/2.2.png"
+                src="./resources/HSE.jpg"
                 alt="Safety Commitment"
                 class="w-full h-[550px] object-cover transition duration-700 group-hover:scale-105"
               />
@@ -1759,7 +1780,13 @@
             class="overflow-hidden rounded-3xl bg-zinc-900 border border-white/10 hover:border-red-600/40 transition duration-500"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.2415346106!2d106.789155!3d-6.229728"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8425293857345!2d106.83241417476907!3d-6.151838660299314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e95d590711%3A0x6693858d64162772!2sJl.%20Kartini%20Raya%20No.54%2C%20RT.1%2FRW.3%2C%20Kartini%2C%20Kecamatan%20Sawah%20Besar%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010750!5e0!3m2!1sid!2sid!4v1782915060396!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
               class="w-full h-80"
               loading="lazy"
               style="border: 0"
@@ -1788,9 +1815,7 @@
                     location_on
                   </span>
 
-                  <span>
-                    Jl. Sudirman No.123, Jakarta Selatan, Indonesia 12190
-                  </span>
+                  <span> Jl. Kartini Raya No 54 B Jakarta Pusat </span>
                 </div>
 
                 <div class="flex gap-4">
@@ -1798,7 +1823,7 @@
                     phone
                   </span>
 
-                  <span> +62 21 555 1234 </span>
+                  <span> +62 8899 2074</span>
                 </div>
 
                 <div class="flex gap-4">
@@ -1806,7 +1831,7 @@
                     mail
                   </span>
 
-                  <span> hq@adrieansuma.com </span>
+                  <span> adriean_sumajaya@yahoo.com </span>
                 </div>
 
                 <div class="flex gap-4">
@@ -1819,7 +1844,7 @@
               </div>
 
               <a
-                href="#"
+                href="https://maps.app.goo.gl/RaDgoMEGnTsqkuxBA"
                 class="mt-8 inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl text-white font-semibold transition duration-300"
               >
                 Buka Google Maps
@@ -1836,7 +1861,13 @@
             class="overflow-hidden rounded-3xl bg-zinc-900 border border-white/10 hover:border-red-600/40 transition duration-500"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.053847243456!2d106.8914!3d-6.2566"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126939.08900776366!2d106.75258666674647!3d-6.151302333478875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a20edfb37415f%3A0xe2f55f126a3c12b0!2sPT.%20Adriean%20Suma%20Jaya%20%7C%20Solar%20Industri%20%7C%20Agen%20BBM%20Industri%20%7C%20Supplier!5e0!3m2!1sid!2sid!4v1782915296201!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
               class="w-full h-80"
               loading="lazy"
               style="border: 0"
@@ -1867,9 +1898,7 @@
                     location_on
                   </span>
 
-                  <span>
-                    Kawasan Industri Halim, Jakarta Timur, Indonesia
-                  </span>
+                  <span> Jl. Raya Sagara Makmur Gang 3 No. 29 </span>
                 </div>
 
                 <div class="flex gap-4">
@@ -1877,7 +1906,7 @@
                     phone
                   </span>
 
-                  <span> +62 21 555 5678 </span>
+                  <span> +62 8944 7751 </span>
                 </div>
 
                 <div class="flex gap-4">
@@ -1885,7 +1914,7 @@
                     mail
                   </span>
 
-                  <span> ops@adrieansuma.com </span>
+                  <span> adriean_sumajaya@yahoo.com </span>
                 </div>
 
                 <div class="flex gap-4">
@@ -1898,7 +1927,7 @@
               </div>
 
               <a
-                href="#"
+                href="https://maps.app.goo.gl/cziEgydFN7p69bpn6"
                 class="mt-8 inline-flex items-center gap-2 border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-6 py-3 rounded-xl font-semibold transition duration-300"
               >
                 Lihat Lokasi
@@ -1949,28 +1978,28 @@
             </p>
 
             <!-- Social -->
-            <div class="flex gap-4 mt-10">
+            <!-- <div class="flex gap-4 mt-10">
               <a
                 href="#"
                 class="w-12 h-12 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300"
               >
-                <span class="material-symbols-outlined"> public </span>
+                <span class="material-symbols-outlined">  </span>
               </a>
 
               <a
                 href="#"
                 class="w-12 h-12 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300"
               >
-                <span class="material-symbols-outlined"> photo_camera </span>
+                <span class="material-symbols-outlined">  </span>
               </a>
 
               <a
                 href="#"
                 class="w-12 h-12 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300"
               >
-                <span class="material-symbols-outlined"> work </span>
+                <span class="material-symbols-outlined">  </span>
               </a>
-            </div>
+            </div> -->
           </div>
 
           <!-- Quick Links -->
@@ -2032,6 +2061,21 @@
             <h3 class="text-xl font-bold text-white mb-8">Contact</h3>
 
             <div class="space-y-6">
+              <!-- <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-red-500">
+                    location_on
+                  </span>
+                </div>
+
+                <p class="text-gray-400 leading-7">
+                  Jl. Kartini Raya No 54 B<br />
+                  Jakarta Pusat, Indonesia
+                </p>
+              </div>
+
               <div class="flex gap-4">
                 <div
                   class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center flex-shrink-0"
@@ -2042,45 +2086,50 @@
                 </div>
 
                 <p class="text-gray-400 leading-7">
-                  Jl. Sudirman No.123<br />
-                  Jakarta Selatan, Indonesia
+                  Jl. Kartini Raya No 54 B<br />
+                  Jakarta Pusat, Indonesia
                 </p>
-              </div>
+              </div> -->
 
-              <div class="flex gap-4">
+              <!-- Phone -->
+              <div class="flex items-start gap-4">
                 <div
-                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center"
+                  class="w-10 h-10 flex-shrink-0 rounded-lg bg-red-600/10 flex items-center justify-center"
                 >
                   <span class="material-symbols-outlined text-red-500">
                     phone
                   </span>
                 </div>
 
-                <p class="text-gray-400">+62 21 555 1234</p>
+                <p class="text-gray-400 leading-10">+62 8899 2074</p>
               </div>
 
-              <div class="flex gap-4">
+              <!-- Email -->
+              <div class="flex items-start gap-4">
                 <div
-                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center"
+                  class="w-10 h-10 flex-shrink-0 rounded-lg bg-red-600/10 flex items-center justify-center"
                 >
                   <span class="material-symbols-outlined text-red-500">
                     mail
                   </span>
                 </div>
 
-                <p class="text-gray-400">info@adrieansuma.com</p>
+                <p class="text-gray-400 leading-10 whitespace-nowrap">
+                  adriean_sumajaya@yahoo.com
+                </p>
               </div>
 
-              <div class="flex gap-4">
+              <!-- Schedule -->
+              <div class="flex items-start gap-4">
                 <div
-                  class="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center"
+                  class="w-10 h-10 flex-shrink-0 rounded-lg bg-red-600/10 flex items-center justify-center"
                 >
                   <span class="material-symbols-outlined text-red-500">
                     schedule
                   </span>
                 </div>
 
-                <p class="text-gray-400">
+                <p class="text-gray-400 leading-7">
                   Senin - Jumat<br />
                   08.00 - 17.00 WIB
                 </p>
@@ -2097,22 +2146,6 @@
           <p class="text-gray-500 text-sm">
             © 2026 PT. Adriean Suma Jaya. All Rights Reserved.
           </p>
-
-          <div class="flex gap-8">
-            <a
-              href="#"
-              class="text-gray-500 hover:text-red-500 text-sm transition"
-            >
-              Privacy Policy
-            </a>
-
-            <a
-              href="#"
-              class="text-gray-500 hover:text-red-500 text-sm transition"
-            >
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>

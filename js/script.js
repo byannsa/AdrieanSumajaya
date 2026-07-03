@@ -1,6 +1,90 @@
 const slider = document.getElementById("logoSlider");
 const track = document.getElementById("logoTrack");
 
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+// ====================
+// MOBILE MENU
+// ====================
+
+// ======================
+// MOBILE MENU
+// ======================
+
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const menuIcon = menuBtn.querySelector("span");
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = mobileMenu.classList.contains("open");
+
+  if (isOpen) {
+    // Tutup
+    mobileMenu.classList.remove("open");
+
+    mobileMenu.style.maxHeight = "0px";
+    mobileMenu.style.opacity = "0";
+    mobileMenu.style.transform = "translateY(-12px)";
+
+    menuIcon.textContent = "menu";
+  } else {
+    // Buka
+    mobileMenu.classList.add("open");
+
+    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+    mobileMenu.style.opacity = "1";
+    mobileMenu.style.transform = "translateY(0)";
+
+    menuIcon.textContent = "close";
+  }
+});
+
+// Klik menu -> otomatis tutup
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+
+    mobileMenu.style.maxHeight = "0px";
+    mobileMenu.style.opacity = "0";
+    mobileMenu.style.transform = "translateY(-12px)";
+
+    menuIcon.textContent = "menu";
+  });
+});
+
+// Tutup menu setelah klik link
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("max-h-screen", "opacity-100", "translate-y-0");
+
+    mobileMenu.classList.add("max-h-0", "opacity-0", "-translate-y-3");
+
+    menuIcon.textContent = "menu";
+  });
+});
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
 // ======================
 // DUPLIKASI LOGO
 // ======================
